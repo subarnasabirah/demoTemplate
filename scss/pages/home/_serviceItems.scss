@@ -1,0 +1,30 @@
+.container-bg{
+    margin-top: -60px;
+    background: $white;
+    border-radius: 10px 10px 0 0;
+}
+
+.services{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 20px;
+    .service-item{
+        background: $white-smoke;
+        border-radius: 8px;
+        text-align: center;
+        width: 140px;
+        margin: 10px;
+        i{
+            padding-top: 40px;
+            color: $brand-color;
+        }
+        p{
+            padding: 15px 0 10px 0;
+            color: $black;
+        }
+        &:hover, &:hover i, &:hover p{
+            background: $brand-color;
+            color: $white;
+        }
+    }
+}
