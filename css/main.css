@@ -100,11 +100,11 @@ header .navbar .navbar-nav li .listing-btn i { margin-right: 5px; font-size: 12p
 
 .services { display: flex; flex-wrap: nowrap; padding: 20px; }
 
-.services .service-item { background: #f4f4f4; border-radius: 8px; text-align: center; width: 140px; margin: 10px; }
+.services .service-item { background: #f4f4f4; border-radius: 8px; text-align: center; width: 200px; margin: 10px; }
 
-.services .service-item i { padding-top: 40px; color: #335BD7; }
+.services .service-item i { padding-top: 50px; color: #335BD7; }
 
-.services .service-item p { padding: 15px 0 10px 0; color: #000; }
+.services .service-item p { padding: 15px 0 15px 0; color: #000; }
 
 .services .service-item:hover, .services .service-item:hover i, .services .service-item:hover p { background: #335BD7; color: #ffffff; }
 
@@ -198,8 +198,6 @@ header .navbar .navbar-nav li .listing-btn i { margin-right: 5px; font-size: 12p
 
 .how-it-work-section .single-features p { font-size: 15.5px; line-height: 27px; padding-bottom: 0; }
 
-.client-testimonial { padding: 50px 0; }
-
 .client-testimonial h3 { text-align: center; font-size: 25px; font-weight: 600; color: #000; line-height: 20px; padding: 50px 0 10px 0; }
 
 .client-testimonial p { text-align: center; font-size: 14px; font-weight: 400; color: #A1A1A1; padding-bottom: 30px; }
@@ -213,5 +211,53 @@ header .navbar .navbar-nav li .listing-btn i { margin-right: 5px; font-size: 12p
 .client-testimonial .testimonial-content p { font-size: 14px; line-height: 26px; margin-bottom: 0; color: #A1A1A1; }
 
 .client-testimonial .testimonial h6 { font-size: 16px; margin-top: -5px; color: #335BD7; }
+
+.resturant-img { margin-top: 70px; position: relative; background-image: url("../img/resturant-img.png"); background-size: cover; z-index: -1; }
+
+.resturant-img::before { content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100vh; background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)); }
+
+.resturant-img .resturant-img-content { max-width: 650px; z-index: 1; }
+
+.resturant-img .resturant-img-content h2 { color: #ffffff; font-weight: 400; font-size: 40px; line-height: 35px; padding-bottom: 20px; }
+
+.resturant-img .resturant-img-content h3 { color: #ffffff; font-weight: 400; font-size: 14px; line-height: 31px; padding-bottom: 20px; }
+
+.resturant-img .resturant-img-content .works-btn { background-color: #ffffff; padding: 12px 30px; color: #335BD7; font-size: 14px; border-radius: 8px; font-weight: 600; text-decoration: none; }
+
+.resturant-img .resturant-img-content .works-btn:hover { background-color: #335BD7; padding: 12px 30px; color: #ffffff; }
+
+.news-tips h3 { text-align: center; font-size: 25px; font-weight: 600; color: #000; line-height: 20px; padding: 70px 0 10px 0; }
+
+.news-tips p { text-align: center; font-size: 14px; font-weight: 400; color: #A1A1A1; padding-bottom: 30px; }
+
+.news-tips .news-tips-items { overflow: hidden; border: 2px solid #EEEEFE; border-radius: 10px; }
+
+.news-tips .news-tips-items .news-tips-image { position: relative; }
+
+.news-tips .news-tips-items .news-tips-image img { display: block; width: 100%; padding: 8px; border-radius: 20px; }
+
+.news-tips .news-tips-items .news-tips-image .news-tips-tag { position: absolute; top: 40px; left: 25px; }
+
+.news-tips .news-tips-items .news-tips-image .news-tips-tag .featured { text-decoration: none; color: #ffffff; padding: 8px 18px; background: #335BD7; border-radius: 20px; margin-right: 8px; }
+
+.news-tips .news-tips-items .news-tips-content .news-tips-heading h4 { font-size: 18px; color: #000; font-weight: 400; text-decoration: none; padding-left: 20px; line-height: 31px; }
+
+.news-tips .news-tips-items .news-tips-content .phone-address { display: flex; padding-left: 20px; padding-top: 10px; }
+
+.news-tips .news-tips-items .news-tips-content .phone-address p { color: #A1A1A1; padding-bottom: 0; margin-bottom: 5px; }
+
+.news-tips .news-tips-items .news-tips-content .phone-address p i { margin-right: 10px; color: #A1A1A1; }
+
+.news-tips .news-tips-items .news-tips-content .phone-address p .calender-icon { margin-left: 25px; }
+
+.call-to-action { margin-top: 70px; position: relative; background-image: url("../img/callto-action.jpg"); background-size: cover; padding: 50px; z-index: -1; }
+
+.call-to-action .property-text { margin-left: 100px; }
+
+.call-to-action .property-text h4 { color: #ffffff; font-size: 18px; }
+
+.call-to-action .property-text p { color: #ffffff; font-size: 14px; }
+
+.call-to-action .submit-btn { background-color: #ffffff; padding: 12px 30px; color: #335BD7; font-size: 14px; border-radius: 8px; font-weight: 600; border: none; }
 
 /*# sourceMappingURL=main.css.map */
