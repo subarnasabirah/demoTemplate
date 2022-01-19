@@ -1,0 +1,78 @@
+.footer-bg{
+    background-color: #1D293F;
+    color: $white;
+    padding: 70px 0;
+    .contact-us{
+        p{
+            color: $white;
+            font-size: 18px;
+        }
+        ul{
+            li{
+                padding-top: 10px;
+                font-size: 14px;
+                i{
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+    .footer-list{
+         p{
+            color: $white;
+            font-size: 16px;
+        }
+        ul{
+            li{
+                padding-top: 10px;
+                font-size: 14px;
+            }
+        }
+        .spam-text{
+            font-size: 14px;
+        }
+        .submit-btn{
+            .email-input{
+                position: relative;
+                border: none;
+                padding: 12px 75px 12px 15px;
+                border-radius: 8px;
+                background-color: $white;
+            }
+            .subscribe-btn{
+                position: absolute;
+                padding: 6px 15px;
+                border-radius: 5px;
+                background-color: $brand-color;
+                color: $white;
+                border: none;
+                right: 120px;
+                margin-top: 6px;
+            }
+        }
+        
+
+    }
+    
+    
+}
+.footer-bottom{
+    background-color: #1D293F;
+    color: $white;
+    border-top: 1px solid #eeeeee;
+    padding: 20px 0;
+    .social-icon{
+        text-align: right;
+        ul{
+            li{
+                
+                display: inline-block;
+                i{
+                    
+                    color: $white;
+                    padding-right: 15px;
+                }
+            }
+        }
+    }
+}

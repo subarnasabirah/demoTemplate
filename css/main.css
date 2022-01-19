@@ -12,6 +12,32 @@ h1.h1_ { margin-top: 100px; }
 
 .ex_c:hover { color: green; font-size: 600%; cursor: pointer; position: absolute; }
 
+.footer-bg { background-color: #1D293F; color: #ffffff; padding: 70px 0; }
+
+.footer-bg .contact-us p { color: #ffffff; font-size: 18px; }
+
+.footer-bg .contact-us ul li { padding-top: 10px; font-size: 14px; }
+
+.footer-bg .contact-us ul li i { padding-right: 10px; }
+
+.footer-bg .footer-list p { color: #ffffff; font-size: 16px; }
+
+.footer-bg .footer-list ul li { padding-top: 10px; font-size: 14px; }
+
+.footer-bg .footer-list .spam-text { font-size: 14px; }
+
+.footer-bg .footer-list .submit-btn .email-input { position: relative; border: none; padding: 12px 75px 12px 15px; border-radius: 8px; background-color: #ffffff; }
+
+.footer-bg .footer-list .submit-btn .subscribe-btn { position: absolute; padding: 6px 15px; border-radius: 5px; background-color: #335BD7; color: #ffffff; border: none; right: 120px; margin-top: 6px; }
+
+.footer-bottom { background-color: #1D293F; color: #ffffff; border-top: 1px solid #eeeeee; padding: 20px 0; }
+
+.footer-bottom .social-icon { text-align: right; }
+
+.footer-bottom .social-icon ul li { display: inline-block; }
+
+.footer-bottom .social-icon ul li i { color: #ffffff; padding-right: 15px; }
+
 header { width: 100%; position: fixed; z-index: 11; }
 
 header .navbar { background-color: transparent !important; }
@@ -250,14 +276,14 @@ header .navbar .navbar-nav li .listing-btn i { margin-right: 5px; font-size: 12p
 
 .news-tips .news-tips-items .news-tips-content .phone-address p .calender-icon { margin-left: 25px; }
 
-.call-to-action { margin-top: 70px; position: relative; background-image: url("../img/callto-action.jpg"); background-size: cover; padding: 50px; z-index: -1; }
+.call-to-action { margin-top: 70px; position: relative; background-image: url("../img/callto-action.jpg"); background-size: cover; padding: 50px; }
 
-.call-to-action .property-text { margin-left: 100px; }
-
-.call-to-action .property-text h4 { color: #ffffff; font-size: 18px; }
+.call-to-action .property-text h4 { color: #ffffff; font-size: 20px; }
 
 .call-to-action .property-text p { color: #ffffff; font-size: 14px; }
 
 .call-to-action .submit-btn { background-color: #ffffff; padding: 12px 30px; color: #335BD7; font-size: 14px; border-radius: 8px; font-weight: 600; border: none; }
+
+.call-to-action .action-btn { text-align: right; }
 
 /*# sourceMappingURL=main.css.map */
