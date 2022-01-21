@@ -26,11 +26,11 @@ h1.h1_ { margin-top: 100px; }
 
 .footer-bg .footer-list .spam-text { font-size: 14px; }
 
-.footer-bg .footer-list .submit-btn .email-input { position: relative; border: none; padding: 12px 75px 12px 15px; border-radius: 8px; background-color: #ffffff; }
+.footer-bg .footer-list .submit-btn .email-input { position: relative; border: none; padding: 12px 0 12px 15px; border-radius: 8px; background-color: #ffffff; max-width: 270px; width: 100%; }
 
-.footer-bg .footer-list .submit-btn .subscribe-btn { position: absolute; padding: 6px 15px; border-radius: 5px; background-color: #335BD7; color: #ffffff; border: none; right: 120px; margin-top: 6px; }
+.footer-bg .footer-list .submit-btn .subscribe-btn { position: absolute; padding: 8px 12px; border-radius: 5px; background-color: #335BD7; color: #ffffff; border: none; right: 210px; margin-top: 5px; font-size: 12px; }
 
-.footer-bottom { background-color: #1D293F; color: #ffffff; border-top: 1px solid #eeeeee; padding: 20px 0; }
+.footer-bottom { background-color: #1D293F; color: #ffffff; border-top: 1px solid #2D374B; padding: 20px 0; }
 
 .footer-bottom .social-icon { text-align: right; }
 
@@ -114,6 +114,8 @@ header .navbar .navbar-nav li .listing-btn i { margin-right: 5px; font-size: 12p
 
 .banner-img .banner-img-content .middle-search-box .what-input { position: relative; }
 
+header.scrolled { background: #171a21 !important; padding: 10px 0; -webkit-transition: 0.75s ease; -o-transition: 0.75s ease; transition: 0.75s ease; }
+
 .owl-carousel .owl-dots { text-align: center; padding-top: 10px; }
 
 .owl-carousel .owl-dots .owl-dot { background-color: #A1A1A1 !important; opacity: 0.7; display: inline-block; height: 10px; margin: 0 3px; width: 10px; border-radius: 100%; outline: 0; }
@@ -148,7 +150,7 @@ header .navbar .navbar-nav li .listing-btn i { margin-right: 5px; font-size: 12p
 
 .popular-things .popular-things-items .popular-things-image .popular-things-tag .open { text-decoration: none; color: #ffffff; padding: 8px 14px; border: 1px solid #ffffff; border-radius: 10px; margin-right: 8px; }
 
-.popular-things .popular-things-items .popular-things-image .popular-things-tag .featured { text-decoration: none; color: #ffffff; padding: 8px 18px; background: red; border-radius: 8px; margin-right: 8px; margin-left: 20px; }
+.popular-things .popular-things-items .popular-things-image .popular-things-tag .featured { text-decoration: none; color: #ffffff; padding: 8px 18px; background: red; border-radius: 8px; margin-right: 8px; margin-left: 35px; }
 
 .popular-things .popular-things-items .popular-things-image .popular-things-tag .rieviews { display: flex; margin-top: 95px; }
 
@@ -174,7 +176,7 @@ header .navbar .navbar-nav li .listing-btn i { margin-right: 5px; font-size: 12p
 
 .popular-things .popular-things-items .popular-things-content .popular-things-footer p { color: #000; margin-top: 20px; padding-bottom: 0; }
 
-.popular-things .popular-things-items .popular-things-content .popular-things-footer p i { background: yellow; height: 30px; width: 30px; border-radius: 50%; padding-top: 7px; margin: 0 5px 0 20px; color: #ffffff; }
+.popular-things .popular-things-items .popular-things-content .popular-things-footer p i { background: #DD9934; height: 30px; width: 30px; border-radius: 50%; padding-top: 7px; margin: 0 5px 0 20px; color: #ffffff; }
 
 .popular-things .popular-things-items .popular-things-content .popular-things-footer .activities-icon-one { color: #A1A1A1; margin-top: 30px; padding-left: 90px; }
 
@@ -276,7 +278,7 @@ header .navbar .navbar-nav li .listing-btn i { margin-right: 5px; font-size: 12p
 
 .news-tips .news-tips-items .news-tips-content .phone-address p .calender-icon { margin-left: 25px; }
 
-.call-to-action { margin-top: 70px; position: relative; background-image: url("../img/callto-action.jpg"); background-size: cover; padding: 50px; }
+.call-to-action { margin-top: 70px; position: relative; background-image: url("../img/callto-action.jpg"); background-size: cover; padding: 50px 0 35px 0; }
 
 .call-to-action .property-text h4 { color: #ffffff; font-size: 20px; }
 

@@ -210,3 +210,10 @@ header {
     }
   }
 }
+
+header.scrolled{
+  background: rgba(23, 26, 33,1) !important;
+  padding: 10px 0;
+  @include transition (0.75s ease);
+
+}

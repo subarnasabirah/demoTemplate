@@ -35,19 +35,22 @@
             .email-input{
                 position: relative;
                 border: none;
-                padding: 12px 75px 12px 15px;
+                padding: 12px 0 12px 15px;
                 border-radius: 8px;
                 background-color: $white;
+                max-width: 270px;
+                width: 100%;
             }
             .subscribe-btn{
                 position: absolute;
-                padding: 6px 15px;
+                padding: 8px 12px;
                 border-radius: 5px;
                 background-color: $brand-color;
                 color: $white;
                 border: none;
-                right: 120px;
-                margin-top: 6px;
+                right: 210px;
+                margin-top: 5px;
+                font-size: 12px;
             }
         }
         
@@ -59,7 +62,7 @@
 .footer-bottom{
     background-color: #1D293F;
     color: $white;
-    border-top: 1px solid #eeeeee;
+    border-top: 1px solid #2D374B;
     padding: 20px 0;
     .social-icon{
         text-align: right;

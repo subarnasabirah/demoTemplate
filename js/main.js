@@ -52,3 +52,10 @@ $('.dot-list').owlCarousel({
 
 
 
+$(window).scroll(function () {
+    $('header').toggleClass('scrolled', $(this).scrollTop() > 100);
+});
+
+$(window).scroll(function () {
+    $('.navbar-nav li').toggleClass('scrolled', $(this).scrollTop() > 100);
+});
