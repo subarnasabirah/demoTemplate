@@ -18,7 +18,7 @@
             margin: 15px auto;
 
         }
-        background: $white-smoke;
+        background: $contnt-bg-color;
         border-radius: 8px;
         text-align: center;
         width: 200px;
@@ -34,6 +34,7 @@
         }
         &:hover, &:hover i, &:hover p{
             background: $brand-color;
+            border-radius: 8px;
             color: $white;
         }
     }

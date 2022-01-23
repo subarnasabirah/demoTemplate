@@ -15,6 +15,9 @@
         padding-bottom: 30px;
     }
     .news-tips-items{
+        @include media('sm') {
+            margin-bottom: 20px;
+        }
         overflow: hidden;
         border: 2px solid #EEEEFE;
         border-radius: 10px;
@@ -28,6 +31,9 @@
             }
             
             .news-tips-tag{
+                @include media('md') {
+                    left: 20px;
+                }
                 position: absolute;
                 top: 40px;
                 left: 25px;
@@ -46,6 +52,10 @@
         .news-tips-content{
             .news-tips-heading{
                 h4{
+                    @include media('md') {
+                       font-size: 14px;
+                       padding-left: 8px;
+                    }
                     font-size: 18px;
                     color: $black;
                     font-weight: 400;
@@ -56,19 +66,30 @@
             }
             
             .phone-address{
+                @include media('md') {
+                    padding-left: 8px;
+                }
                 display: flex;
                 padding-left: 20px;
                 padding-top: 10px;
                 p{
+                    @include media('md') {
+                       font-size: 11px;
+                    }
                     color: $light-gray;
                     padding-bottom: 0;
                     margin-bottom: 5px;
+                    font-size: 14px;
                    
                     i{
                         margin-right: 10px;
                         color: $light-gray;
                     }
                     .calender-icon{
+                        @include media('md') {
+                            margin-left: 15px;
+                        }
+                        
                         margin-left: 25px;
                     }
                 }

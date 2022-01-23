@@ -8,7 +8,7 @@
         font-size: 25px;
         font-weight: 600;
         color: $black;
-        line-height: 20px;
+        line-height: 31px;
         padding-bottom: 10px;
     }
     p{
@@ -32,14 +32,16 @@
         border-radius: 10px;
 
     i{
-        height: 80px;
-        width: 80px;
+        height: 120px;
+        width: 120px;
         background: $contnt-bg-color;
         border-radius: 50%;
         font-size: 30px;
         color: $brand-color;
+        line-height: 120px;
         margin-bottom: 30px;
-        padding-top: 25px;
+        // padding-top: 25px;
+        transition: all 0.3s ease;
         &:hover{
              background: $brand-color;
              color: $white;

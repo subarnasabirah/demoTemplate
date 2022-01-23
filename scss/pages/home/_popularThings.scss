@@ -39,17 +39,40 @@
                     margin-right: 8px;
                 }
                 .featured{
+                    @include media('lg') {
+                        padding: 8px 12px;
+                        font-size: 12px;
+                        margin-left: 6px;
+                    }
+                    @include media('md') {
+                        padding: 8px 18px;
+                        margin-left: 35px;
+                    }
+                    @include media('sm') {
+                        padding: 8px 18px;
+                        margin-left: 205px;
+                    }
                     text-decoration: none;
-                    color: $white;
-                    padding: 8px 18px;
-                    background: red;
-                    border-radius: 8px;
-                    margin-right: 8px;
-                    margin-left: 35px;
-                }
+                        color: $white;
+                        padding: 8px 18px;
+                        background: red;
+                        border-radius: 8px;
+                        margin-right: 8px;
+                        margin-left: 35px;
+                        font-size: 14px;
+                    }
                 .rieviews{
                     display: flex;
                     margin-top: 95px;
+                     @include media('lg') {
+                         margin-top: 70px;
+                     }
+                     @include media('md') {
+                         margin-top: 95px;
+                     }
+                     @include media('sm') {
+                         margin-top: 200px;
+                     }
                     i{
                         margin-right: 5px;
                         color: $white;
@@ -62,20 +85,18 @@
                     }
                 }
                 .site-icons{
-                    position: absolute;
-                    top: 145px;
-                    left: 220px;
-                    background: $black;
-                    border-radius: 50%;
-                    height: 50px;
-                    width: 50px;
-                    text-align: center;
-                    padding-top: 12px;
-                    color: $white;
-                    border: 2px solid $white;
-                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-                }
-                .site-icons-two{
+                    @include media('lg') {
+                        top: 110px;
+                        left: 175px;
+                    }
+                    @include media('md') {
+                        top: 135px;
+                        left: 205px;
+                    }
+                    @include media('sm') {
+                       top: 250px;
+                       left: 360px
+                    }
                     position: absolute;
                     top: 150px;
                     left: 220px;
@@ -88,8 +109,22 @@
                     color: $white;
                     border: 2px solid $white;
                     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
                 }
+                // .site-icons-two{
+                //     position: absolute;
+                //     top: 150px;
+                //     left: 220px;
+                //     background: $black;
+                //     border-radius: 50%;
+                //     height: 50px;
+                //     width: 50px;
+                //     text-align: center;
+                //     padding-top: 12px;
+                //     color: $white;
+                //     border: 2px solid $white;
+                //     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+                // }
             }
 
         }  
@@ -97,6 +132,9 @@
         .popular-things-content{
             .popular-things-heading{
                 h4 a{
+                     @include media('lg') {
+                        font-size: 16px;
+                    }
                     font-size: 18px;
                     color: $black;
                     font-weight: 700;
@@ -139,6 +177,10 @@
                     margin-top: 20px;
                     padding-bottom: 0;
                     i{
+                        @include media('lg') {
+                            margin: 0 5px 0 15px;
+                        }
+                        
                         background: #DD9934;
                         height: 30px;
                         width: 30px;
@@ -150,6 +192,12 @@
 
                 }
                 .activities-icon-one{
+                    @include media('lg') {
+                        padding-left: 45px;
+                    }
+                    @include media('sm') {
+                        padding-left: 90px;
+                    }
                     color: $light-gray;
                     margin-top: 30px;
                     padding-left: 90px;

@@ -16,12 +16,19 @@
     }
     .trending-cities-img{
         .miami-img-one{
+            @include media('sm') {
+                margin-bottom: 20px;
+            }
             position: relative;
             img{
                 display: block;
                 width: 100%;
                 height: 275px;
                 border-radius: 8px;
+                transition: transform .5s ease;
+                &:hover{
+                    transform: scale(1.5);
+                }
             }
             &::after {
                 content: '';
@@ -54,11 +61,12 @@
         }
         .miami-img-two{
             position: relative;
+           
             img{
-            display: block;
-            width: 100%;
-            height: 275px;
-            border-radius: 8px;
+                display: block;
+                width: 100%;
+                height: 275px;
+                border-radius: 8px;
             }
             &::after {
                 content: '';
@@ -73,6 +81,12 @@
                 border-radius: 8px;
             }
         }
+         @include media('sm') {
+                .responsive-pdng{
+                    margin-bottom: 20px;
+                }
+
+            }
         .miami-content {
                 position: absolute;
                 z-index: 999;
