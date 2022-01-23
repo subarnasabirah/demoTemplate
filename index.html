@@ -35,7 +35,7 @@
                         
                         <!-- Collapsible wrapper -->
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav">
+                        <ul class="navbar-nav ml-auto">
                             <li class="nav-item active">
                                 <a href="javascript: " class="nav-link">Home</a>
                             </li>
@@ -79,16 +79,27 @@
         
     </header>
 <!-- =========== Banner image area ========== -->
-    <section class="banner-img w-100 vh-100 d-flex justify-content-center align-items-center">
+    <section class="banner-img w-100  d-flex justify-content-center align-items-center">
         <article class="banner-img-content text-center">     
             <h1>Explore Amazing Destinations</h1>
-            <h3>Find great places to stay, eat, shop or visit from local experts.</h3>
+            <p>Find great places to stay, eat, shop or visit from local experts.</p>
             <form action="">
                 <div class="form-group middle-search-box">
                     <label for="">What</label>
                     <input type="text" class="form-control shadow-none what-input" placeholder="Ex: shopping and restaurant...">
                     <label for="" class="where-label" >Where</label>
                     <input type="text" class="form-control shadow-none where-input" placeholder="Your City">
+                    <span class="fa fa-search form-control-feedback"></span>
+                </div>
+            </form>
+            <form action="" class="responsive-search-area">
+                <div class="form-group responsive-search-box">
+                    <label for="whatInputRes">What</label>
+                    <input type="text" class="form-control what-input-respsv" id="whatInputRes" placeholder="Ex: shopping and restaurant...">
+                </div>
+                <div class="form-group responsive-search-box">
+                    <label for="whereInputRes" class="where-label">Where</label>
+                    <input type="text" class="form-control where-input-respsv" id="whereInputRes" placeholder="Your City">
                     <span class="fa fa-search form-control-feedback"></span>
                 </div>
             </form>
@@ -100,29 +111,43 @@
             <!-- Service Items Section -->
             <section>
                 <div class="services">
-                    <div class="service-item">
-                        <i class="fas fa-utensils"></i>
-                        <p>Restaurant</p>
-                    </div>
-                    <div class="service-item">
-                        <i class="fas fa-utensils"></i>
-                        <p>Restaurant</p>
-                    </div>
-                    <div class="service-item">
-                        <i class="fas fa-utensils"></i>
-                        <p>Restaurant</p>
-                    </div>
-                    <div class="service-item">
-                        <i class="fas fa-utensils"></i>
-                        <p>Restaurant</p>
-                    </div>
-                    <div class="service-item">
-                        <i class="fas fa-utensils"></i>
-                        <p>Restaurant</p>
-                    </div>
-                    <div class="service-item">
-                        <i class="fas fa-utensils"></i>
-                        <p>Restaurant</p>
+                    <div class="row">
+                        <div class="col-md-2 col-sm-6">
+                            <div class="service-item">
+                                <i class="fas fa-utensils"></i>
+                                <p>Restaurant</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-6">
+                            <div class="service-item">
+                                <i class="fas fa-utensils"></i>
+                                <p>Restaurant</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-6">
+                            <div class="service-item">
+                                <i class="fas fa-utensils"></i>
+                                <p>Restaurant</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-6">
+                            <div class="service-item">
+                                <i class="fas fa-utensils"></i>
+                                <p>Restaurant</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-6">
+                            <div class="service-item">
+                                <i class="fas fa-utensils"></i>
+                                <p>Restaurant</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-6">
+                            <div class="service-item">
+                                <i class="fas fa-utensils"></i>
+                                <p>Restaurant</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -187,7 +212,6 @@
                                                 <div class="popular-things-tag">
                                                     <a href="#" class="open">$$$$$</a>
                                                     <a href="#" class="open">Open</a>
-                                                    <a href="#" class="featured">Featured</a>
                                                     <div class="rieviews">
                                                         <i class="fas fa-star"></i>
                                                         <i class="fas fa-star"></i>
@@ -196,7 +220,50 @@
                                                         <i class="fas fa-star"></i>
                                                         <p>(5 reviews)</p>
                                                     </div>
-                                                    <div class="site-icons">
+                                                    <div class="site-icons-two">
+                                                        <i class="fab fa-servicestack"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    
+                                            <!-- blog-content -->
+                                            <div class="popular-things-content">
+                                                <div class="popular-things-heading">
+                                                    <h4><a href="#">Adventure High Ropes</a></h4>
+                                                </div>
+                                                <p class="pera-text">Lorem ipsum dolor mauris lectus,a ultricies nisi faucibus nec.elementum faucibus nec.
+                                                </p>
+                                                <div class="phone-address">
+                                                    <p><i class="fa fa-phone" aria-hidden="true"></i> +61-8181-123</p>
+                                                    <p><i class="fas fa-map-marker-alt location-icon"></i> New York</p>
+                                                </div>
+                                                <div class="popular-things-footer">
+                                                    <p><i class="fab fa-servicestack"></i> Outdoor Activities</p>
+                                                    <i class="fas fa-search-plus activities-icon-one"></i>
+                                                    <i class="far fa-heart activities-icon-two"></i>
+                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- popular-things-one -->
+                                    <div class="col-xl-12 col-md-12 cik-sm-12 col-xs-12">
+                                        <div class="popular-things-items">
+                                            <!-- Image -->
+                                            <div class="popular-things-image">
+                                                <img src="img/popular/1.jpg" alt="blog-img">
+                                                <div class="popular-things-tag">
+                                                    <a href="#" class="open">$$$$$</a>
+                                                    <a href="#" class="open">Open</a>
+                                                    <div class="rieviews">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <p>(5 reviews)</p>
+                                                    </div>
+                                                    <div class="site-icons-two">
                                                         <i class="fab fa-servicestack"></i>
                                                     </div>
                                                 </div>
@@ -275,7 +342,6 @@
                                                 <div class="popular-things-tag">
                                                     <a href="#" class="open">$$$$$</a>
                                                     <a href="#" class="open">Open</a>
-                                                    <a href="#" class="featured">Featured</a>
                                                     <div class="rieviews">
                                                         <i class="fas fa-star"></i>
                                                         <i class="fas fa-star"></i>
@@ -284,7 +350,7 @@
                                                         <i class="fas fa-star"></i>
                                                         <p>(5 reviews)</p>
                                                     </div>
-                                                    <div class="site-icons">
+                                                    <div class="site-icons-two">
                                                         <i class="fab fa-servicestack"></i>
                                                     </div>
                                                 </div>
@@ -319,7 +385,6 @@
                                                 <div class="popular-things-tag">
                                                     <a href="#" class="open">$$$$$</a>
                                                     <a href="#" class="open">Open</a>
-                                                    <a href="#" class="featured">Featured</a>
                                                     <div class="rieviews">
                                                         <i class="fas fa-star"></i>
                                                         <i class="fas fa-star"></i>
@@ -328,51 +393,7 @@
                                                         <i class="fas fa-star"></i>
                                                         <p>(5 reviews)</p>
                                                     </div>
-                                                    <div class="site-icons">
-                                                        <i class="fab fa-servicestack"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                    
-                                            <!-- blog-content -->
-                                            <div class="popular-things-content">
-                                                <div class="popular-things-heading">
-                                                    <h4><a href="#">Adventure High Ropes</a></h4>
-                                                </div>
-                                                <p class="pera-text">Lorem ipsum dolor mauris lectus,a ultricies nisi faucibus nec.elementum faucibus nec.
-                                                </p>
-                                                <div class="phone-address">
-                                                    <p><i class="fa fa-phone" aria-hidden="true"></i> +61-8181-123</p>
-                                                    <p><i class="fas fa-map-marker-alt location-icon"></i> New York</p>
-                                                </div>
-                                                <div class="popular-things-footer">
-                                                    <p><i class="fab fa-servicestack"></i> Outdoor Activities</p>
-                                                    <i class="fas fa-search-plus activities-icon-one"></i>
-                                                    <i class="far fa-heart activities-icon-two"></i>
-                                    
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- popular-things-one -->
-                                    <div class="col-xl-12 col-md-12 cik-sm-12 col-xs-12">
-                                        <div class="popular-things-items">
-                                            <!-- Image -->
-                                            <div class="popular-things-image">
-                                                <img src="img/popular/1.jpg" alt="blog-img">
-                                                <div class="popular-things-tag">
-                                                    <a href="#" class="open">$$$$$</a>
-                                                    <a href="#" class="open">Open</a>
-                                                    <a href="#" class="featured">Featured</a>
-                                                    <div class="rieviews">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <p>(5 reviews)</p>
-                                                    </div>
-                                                    <div class="site-icons">
+                                                    <div class="site-icons-two">
                                                         <i class="fab fa-servicestack"></i>
                                                     </div>
                                                 </div>

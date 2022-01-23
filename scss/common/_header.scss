@@ -8,7 +8,7 @@ header {
      .navbar-toggler {
          color: $white;
          
-         @include media('tab') {
+         @include media('md') {
             padding: 0.25rem 0.75rem;
             font-size: 1.25rem;
             line-height: 0!important;
@@ -16,7 +16,7 @@ header {
             border:none !important;
             border-radius: 0 !important;
             transition: 0 !important;
-            margin-right: -45px;
+            // margin-right: -45px;
             align-items: center;
             } 
 
@@ -34,6 +34,9 @@ header {
       padding: 0 10px;
     }
     .search-box {
+      @include media('md') {
+          display: none;
+        }
       position: relative;
       ::placeholder {
         color: $white;
@@ -63,11 +66,38 @@ header {
 
     .navbar-nav {
       margin-left: auto !important;
+      @include media('md') {
+      margin-top: 20px !important;
+      padding: 10px 0;
+      background: rgba(23, 26, 33,1);
+
+      }
       li {
+        @include media('md') {
+        width: 100%;
+        min-height: 1px;
+        padding: 0 15px;
+        
+        // border-top: 1px solid #ffffff80;
+        &.scrolled{
+         background: rgba(23, 26, 33,1) !important;
+         @include transition (0.75s ease);
+      }
+    }
         @include transition(0.75s ease);
         a {
           color: $white;
+          padding-right: 10px;
+          @include media('md') {
+            padding: 10px;
+            border-radius: 10px;
+          }
           &:hover {
+            @include media('md') {
+              background-color: $brand-color;
+              color: $white;
+              @include transition(0.75s ease);
+            }
             color: red;
           }
         }
@@ -86,12 +116,15 @@ header {
         }
 
         .dropdown {
+          @include media('md') {
+            display: none;
+          }
           position: absolute;
-          top: 105%;
+          top: 120%;
           z-index: 9999;
           li {
-            list-style-type: none;
             background-color: $brand-color;
+            list-style-type: none;
             position: relative;
             text-align: left;
             padding: 8px 0 8px 18px;
@@ -114,6 +147,9 @@ header {
           @include transition(0.75s ease);
         }
         .listing-btn {
+           @include media('md') {
+             display: none;
+           }
           background-color: $white;
           padding: 8px 20px;
           color: $black;
@@ -123,17 +159,31 @@ header {
             margin-right: 5px;
             font-size: 12px;
           }
+
         }
       }
     }
   }
 }
 .banner-img {
+  @include media('md') {
+    height: 80vh;
+  }
+  @include media('xs') {
+    height: 75vh;
+  }
   position: relative;
   background-image: url('../img/banner-img.jpg');
   background-size: cover;
+  height: 100vh;
   z-index: -1;
   &::before {
+    @include media('md') {
+      height: 80vh;
+    }
+    @include media('xs') {
+      height: 75vh;
+    }
     content: '';
     position: absolute;
     left: 0;
@@ -149,26 +199,35 @@ header {
   }
   .banner-img-content {
     z-index: 1;
+    padding: 0 30px;
     h1 {
       color: $white;
       font-weight: 600;
       font-size: 40px;
       line-height: 35px;
+      @include media('sm') {
+        font-size: 25px;
+        line-height: 40px;
+      }
     }
-    h3 {
+    p{
       color: $white;
       font-weight: 400;
       font-size: 14px;
       line-height: 60px;
+      @include media('sm') {
+        line-height: 25px;
+      }
+
     }
     .middle-search-box {
       display: flex;
       background: $white;
       padding: 5px 15px;
       border-radius: 40px 40px;
+      margin: 0 10px;
       position: relative;
       label {
-        display: inline-block;
         margin-top: 12px;
         font-size: 16px;
         font-weight: 400;
@@ -207,6 +266,50 @@ header {
       .what-input {
         position: relative;
       }
+    }
+    .responsive-search-area{
+      display: none;
+      .responsive-search-box{
+        background: $white;
+        padding: 5px 15px;
+        margin: 15px 0;
+        border-radius: 40px 40px;
+        display: flex;
+        position: relative;
+        label {
+          font-size: 16px;
+          font-weight: 400;
+          padding: 8px 10px 0 20px;
+        }
+      
+        input {
+          position: relative;
+          border: none;
+        }
+        span {
+          color: $white;
+          padding: 10px;
+          background: $brand-color;
+          border-radius: 50%;
+          font-size: 18px;
+        }
+        ::placeholder {
+          color: $light-gray;
+        }
+        .what-input-two {
+          position: relative;
+        }
+        
+      }
+    } 
+    @include media('xs') {
+      .responsive-search-area{
+        display: block;
+      }
+      .middle-search-box{
+        display: none;
+      }
+
     }
   }
 }

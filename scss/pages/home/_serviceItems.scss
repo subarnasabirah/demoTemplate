@@ -2,17 +2,27 @@
     margin-top: -60px;
     background: $white;
     border-radius: 10px 10px 0 0;
+     @include media('xs') {
+        margin-top: 20px;
+        border-radius: none;
+     }
 }
 
 .services{
-    display: flex;
-    flex-wrap: nowrap;
+    // display: flex;
+    // flex-wrap: nowrap;
     padding: 20px;
     .service-item{
+        @include media('xs') {
+            display: block;
+            margin: 15px auto;
+
+        }
         background: $white-smoke;
         border-radius: 8px;
         text-align: center;
         width: 200px;
+        max-width: 100%;
         margin: 10px;
         i{
             padding-top: 50px;
