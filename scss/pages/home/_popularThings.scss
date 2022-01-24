@@ -15,64 +15,51 @@
         padding-bottom: 30px;
     }
     .popular-things-items{
+        position: relative;
         overflow: hidden;
         border: 2px solid #EEEEFE;
         border-radius: 10px;
         .popular-things-image{
             position: relative;
+            overflow: hidden;
             img{
                 display: block;
                 padding: 8px;
                 border-radius: 20px;
+                opacity: 0.8;
             }
+        }
             
             .popular-things-tag{
-                position: absolute;
-                top: 50px;
-                left: 25px;
+                   position: absolute;
+                   top: 30px;
+                   left: 25px;
                 .open{
                     text-decoration: none;
                     color: $white;
                     padding: 8px 14px;
                     border: 1px solid $white;
                     border-radius: 10px;
-                    margin-right: 8px;
+                    margin-right: 8px; 
                 }
+            }
                 .featured{
-                    @include media('lg') {
-                        padding: 8px 12px;
-                        font-size: 12px;
-                        margin-left: 6px;
-                    }
-                    @include media('md') {
-                        padding: 8px 18px;
-                        margin-left: 35px;
-                    }
-                    @include media('sm') {
-                        padding: 8px 18px;
-                        margin-left: 205px;
-                    }
                     text-decoration: none;
-                        color: $white;
-                        padding: 8px 18px;
-                        background: red;
-                        border-radius: 8px;
-                        margin-right: 8px;
-                        margin-left: 35px;
-                        font-size: 14px;
-                    }
+                    color: $white;
+                    padding: 8px 14px;
+                    background: #ED4949;
+                    border-radius: 8px;
+                    font-size: 14px;
+                    position: absolute;
+                    right: 25px;
+                    top: 22px;
+
+                }
                 .rieviews{
                     display: flex;
-                    margin-top: 95px;
-                     @include media('lg') {
-                         margin-top: 70px;
-                     }
-                     @include media('md') {
-                         margin-top: 95px;
-                     }
-                     @include media('sm') {
-                         margin-top: 200px;
-                     }
+                    position: absolute;
+                    bottom: -25px;
+                    left: 20px;
                     i{
                         margin-right: 5px;
                         color: $white;
@@ -83,53 +70,30 @@
                         color: $white;
                         font-size: 14px;
                     }
-                }
-                .site-icons{
-                    @include media('lg') {
-                        top: 110px;
-                        left: 175px;
-                    }
-                    @include media('md') {
-                        top: 135px;
-                        left: 205px;
-                    }
-                    @include media('sm') {
-                       top: 250px;
-                       left: 360px
-                    }
-                    position: absolute;
-                    top: 150px;
-                    left: 220px;
-                    background: $black;
-                    border-radius: 50%;
-                    height: 50px;
-                    width: 50px;
-                    text-align: center;
-                    padding-top: 12px;
-                    color: $white;
-                    border: 2px solid $white;
-                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-                }
-                // .site-icons-two{
-                //     position: absolute;
-                //     top: 150px;
-                //     left: 220px;
-                //     background: $black;
-                //     border-radius: 50%;
-                //     height: 50px;
-                //     width: 50px;
-                //     text-align: center;
-                //     padding-top: 12px;
-                //     color: $white;
-                //     border: 2px solid $white;
-                //     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                } 
+                
+            
+            
 
-                // }
-            }
-
-        }  
+        
 
         .popular-things-content{
+            padding: 20px;
+            position: relative;
+            .site-icons{
+                position: absolute;
+                top: -35px;
+                right: 30px;
+                background: $black;
+                border-radius: 50%;
+                height: 50px;
+                width: 50px;
+                text-align: center;
+                padding-top: 12px;
+                color: $white;
+                border: 2px solid $white;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            }
             .popular-things-heading{
                 h4 a{
                      @include media('lg') {
@@ -139,7 +103,7 @@
                     color: $black;
                     font-weight: 700;
                     text-decoration: none;
-                    padding-left: 20px;
+                    
                 }  
             }
             .pera-text{
@@ -150,11 +114,11 @@
                 text-overflow: ellipsis;
                 text-align: left;
                 padding-bottom: 0;
-                padding-left: 20px;
+              
             }
             .phone-address{
                 display: flex;
-                padding-left: 20px;
+                
                 p{
                     color: $black;
                     padding-bottom: 0;
@@ -169,40 +133,42 @@
                 }
 
             }
-            .popular-things-footer{
+           
+            
+                    
+        }
+         .popular-things-footer{
                 border-top: 2px solid #EEEEFE;
-                display: flex;
+                display: block;
+                padding: 0 20px;
                 p{
                     color: $black;
                     margin-top: 20px;
                     padding-bottom: 0;
+                    text-align: left;
+                   
+                    float: left;
                     i{
-                        @include media('lg') {
-                            margin: 0 5px 0 15px;
-                        }
-                        
                         background: #DD9934;
                         height: 30px;
                         width: 30px;
                         border-radius: 50%;
                         padding-top: 7px;
-                        margin: 0 5px 0 20px;
+                        margin-right: 5px;
                         color: $white;
+                        text-align: center;
                     }
 
                 }
                 .activities-icon-one{
-                    @include media('lg') {
-                        padding-left: 45px;
-                    }
-                    @include media('sm') {
-                        padding-left: 90px;
-                    }
+                    float: right;
                     color: $light-gray;
                     margin-top: 30px;
-                    padding-left: 90px;
+                    font-size: 16px;
+                    
                 }
                 .activities-icon-two{
+                    float: right;
                     color: #A1A1A1;
                     height: 30px;
                     width: 30px;
@@ -210,12 +176,10 @@
                     background: #EEEEFE;
                     margin: 20px 0 0 25px;
                     padding: 8px;
+                    font-size: 16px;
                 }
 
             }
-            
-                    
-        }
        
         
 

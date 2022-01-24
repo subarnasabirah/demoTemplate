@@ -16,19 +16,36 @@ h1.h1_ { margin-top: 100px; }
 
 .footer-bg .contact-us p { color: #ffffff; font-size: 18px; }
 
-.footer-bg .contact-us ul li { padding-top: 10px; font-size: 14px; }
+.footer-bg .contact-us ul li { padding-top: 10px; font-size: 14px; -webkit-transition: 0.75s ease; -o-transition: 0.75s ease; transition: 0.75s ease; }
+
+.footer-bg .contact-us ul li:hover { padding-left: 10px; }
 
 .footer-bg .contact-us ul li i { padding-right: 10px; }
 
-.footer-bg .footer-list p { color: #ffffff; font-size: 16px; }
+.footer-bg .footer-list p { color: #ffffff; font-size: 16px; padding-top: 10px; }
 
-.footer-bg .footer-list ul li { padding-top: 10px; font-size: 14px; }
+.footer-bg .footer-list ul li { padding-top: 10px; font-size: 14px; -webkit-transition: 0.75s ease; -o-transition: 0.75s ease; transition: 0.75s ease; }
+
+.footer-bg .footer-list ul li:hover { padding-left: 10px; }
 
 .footer-bg .footer-list .spam-text { font-size: 14px; }
 
+.footer-bg .footer-list .submit-btn { position: relative; }
+
 .footer-bg .footer-list .submit-btn .email-input { position: relative; border: none; padding: 12px 0 12px 15px; border-radius: 8px; background-color: #ffffff; max-width: 270px; width: 100%; }
 
-.footer-bg .footer-list .submit-btn .subscribe-btn { position: absolute; padding: 8px 12px; border-radius: 5px; background-color: #234DD4; color: #ffffff; border: none; right: 210px; margin-top: 5px; font-size: 12px; }
+.footer-bg .footer-list .submit-btn .subscribe-btn { position: absolute; padding: 8px 12px; border-radius: 5px; background-color: #234DD4; color: #ffffff; border: none; left: 186px; margin-top: 5px; font-size: 12px; }
+
+@media all and (max-width: 991px) { .footer-bg .footer-list .submit-btn .subscribe-btn { left: 129px; } }
+
+@media all and (max-width: 767px) { .footer-bg .footer-list .submit-btn .subscribe-btn { left: 158px; } }
+
+@media all and (max-width: 575px) { .footer-bg .footer-list .submit-btn .subscribe-btn { left: 186px; } }
+
+@media all and (max-width: 991px) { .footer-bg .company { margin-bottom: 30px; }
+  .footer-bg .contact-us { margin-bottom: 30px; } }
+
+@media all and (max-width: 767px) { .footer-bg .Discover { margin-bottom: 30px; } }
 
 .footer-bottom { background-color: #1D293F; color: #ffffff; border-top: 1px solid #2D374B; padding: 20px 0; }
 
@@ -37,6 +54,8 @@ h1.h1_ { margin-top: 100px; }
 .footer-bottom .social-icon ul li { display: inline-block; }
 
 .footer-bottom .social-icon ul li i { color: #ffffff; padding-right: 15px; }
+
+.footer-bottom .social-icon ul li i:hover { color: #234DD4; }
 
 header { width: 100%; position: fixed; z-index: 11; }
 
@@ -73,13 +92,13 @@ header .navbar .navbar-nav li a { color: #ffffff; padding-right: 10px; }
 
 @media all and (max-width: 991px) { header .navbar .navbar-nav li a { padding: 10px; border-radius: 10px; } }
 
-header .navbar .navbar-nav li a:hover { color: red; }
+header .navbar .navbar-nav li a:hover { color: #234DD4; }
 
 @media all and (max-width: 991px) { header .navbar .navbar-nav li a:hover { background-color: #234DD4; color: #ffffff; -webkit-transition: 0.75s ease; -o-transition: 0.75s ease; transition: 0.75s ease; } }
 
 header .navbar .navbar-nav li .nav-item { font-weight: 600; padding-left: 10px; }
 
-header .navbar .navbar-nav li .nav-item .nav-link:hover { color: red; }
+header .navbar .navbar-nav li .nav-item .nav-link:hover { color: #000; }
 
 header .navbar .navbar-nav li .nav-item a i { margin-right: 5px; }
 
@@ -91,7 +110,7 @@ header .navbar .navbar-nav li .dropdown li { background-color: #234DD4; list-sty
 
 header .navbar .navbar-nav li .dropdown li a { text-decoration: none; color: #ffffff; }
 
-header .navbar .navbar-nav li .dropdown li a:hover { color: red; -webkit-transition: 0.75s ease; -o-transition: 0.75s ease; transition: 0.75s ease; }
+header .navbar .navbar-nav li .dropdown li a:hover { color: #000; -webkit-transition: 0.75s ease; -o-transition: 0.75s ease; transition: 0.75s ease; }
 
 header .navbar .navbar-nav li:hover .dropdown li { visibility: visible; -webkit-transition: 0.75s ease; -o-transition: 0.75s ease; transition: 0.75s ease; }
 
@@ -100,6 +119,8 @@ header .navbar .navbar-nav li .listing-btn { background-color: #ffffff; padding:
 @media all and (max-width: 991px) { header .navbar .navbar-nav li .listing-btn { display: none; } }
 
 header .navbar .navbar-nav li .listing-btn i { margin-right: 5px; font-size: 12px; }
+
+header .navbar .navbar-nav li .listing-btn.scrolled { background-color: #234DD4; color: #ffffff; }
 
 .banner-img { position: relative; background-image: url("../img/banner-img.jpg"); background-size: cover; height: 100vh; z-index: -1; }
 
@@ -188,51 +209,35 @@ header.scrolled { background: #171a21 !important; padding: 10px 0; -webkit-trans
 
 .popular-things p { text-align: center; font-size: 14px; font-weight: 400; color: #A1A1A1; padding-bottom: 30px; }
 
-.popular-things .popular-things-items { overflow: hidden; border: 2px solid #EEEEFE; border-radius: 10px; }
+.popular-things .popular-things-items { position: relative; overflow: hidden; border: 2px solid #EEEEFE; border-radius: 10px; }
 
-.popular-things .popular-things-items .popular-things-image { position: relative; }
+.popular-things .popular-things-items .popular-things-image { position: relative; overflow: hidden; }
 
-.popular-things .popular-things-items .popular-things-image img { display: block; padding: 8px; border-radius: 20px; }
+.popular-things .popular-things-items .popular-things-image img { display: block; padding: 8px; border-radius: 20px; opacity: 0.8; }
 
-.popular-things .popular-things-items .popular-things-image .popular-things-tag { position: absolute; top: 50px; left: 25px; }
+.popular-things .popular-things-items .popular-things-tag { position: absolute; top: 30px; left: 25px; }
 
-.popular-things .popular-things-items .popular-things-image .popular-things-tag .open { text-decoration: none; color: #ffffff; padding: 8px 14px; border: 1px solid #ffffff; border-radius: 10px; margin-right: 8px; }
+.popular-things .popular-things-items .popular-things-tag .open { text-decoration: none; color: #ffffff; padding: 8px 14px; border: 1px solid #ffffff; border-radius: 10px; margin-right: 8px; }
 
-.popular-things .popular-things-items .popular-things-image .popular-things-tag .featured { text-decoration: none; color: #ffffff; padding: 8px 18px; background: red; border-radius: 8px; margin-right: 8px; margin-left: 35px; font-size: 14px; }
+.popular-things .popular-things-items .featured { text-decoration: none; color: #ffffff; padding: 8px 14px; background: #ED4949; border-radius: 8px; font-size: 14px; position: absolute; right: 25px; top: 22px; }
 
-@media all and (max-width: 1199px) { .popular-things .popular-things-items .popular-things-image .popular-things-tag .featured { padding: 8px 12px; font-size: 12px; margin-left: 6px; } }
+.popular-things .popular-things-items .rieviews { display: flex; position: absolute; bottom: -25px; left: 20px; }
 
-@media all and (max-width: 991px) { .popular-things .popular-things-items .popular-things-image .popular-things-tag .featured { padding: 8px 18px; margin-left: 35px; } }
+.popular-things .popular-things-items .rieviews i { margin-right: 5px; color: #ffffff; font-size: 14px; }
 
-@media all and (max-width: 767px) { .popular-things .popular-things-items .popular-things-image .popular-things-tag .featured { padding: 8px 18px; margin-left: 205px; } }
+.popular-things .popular-things-items .rieviews p { margin-left: 5px; color: #ffffff; font-size: 14px; }
 
-.popular-things .popular-things-items .popular-things-image .popular-things-tag .rieviews { display: flex; margin-top: 95px; }
+.popular-things .popular-things-items .popular-things-content { padding: 20px; position: relative; }
 
-@media all and (max-width: 1199px) { .popular-things .popular-things-items .popular-things-image .popular-things-tag .rieviews { margin-top: 70px; } }
+.popular-things .popular-things-items .popular-things-content .site-icons { position: absolute; top: -35px; right: 30px; background: #000; border-radius: 50%; height: 50px; width: 50px; text-align: center; padding-top: 12px; color: #ffffff; border: 2px solid #ffffff; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; }
 
-@media all and (max-width: 991px) { .popular-things .popular-things-items .popular-things-image .popular-things-tag .rieviews { margin-top: 95px; } }
-
-@media all and (max-width: 767px) { .popular-things .popular-things-items .popular-things-image .popular-things-tag .rieviews { margin-top: 200px; } }
-
-.popular-things .popular-things-items .popular-things-image .popular-things-tag .rieviews i { margin-right: 5px; color: #ffffff; font-size: 14px; }
-
-.popular-things .popular-things-items .popular-things-image .popular-things-tag .rieviews p { margin-left: 5px; color: #ffffff; font-size: 14px; }
-
-.popular-things .popular-things-items .popular-things-image .popular-things-tag .site-icons { position: absolute; top: 150px; left: 220px; background: #000; border-radius: 50%; height: 50px; width: 50px; text-align: center; padding-top: 12px; color: #ffffff; border: 2px solid #ffffff; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; }
-
-@media all and (max-width: 1199px) { .popular-things .popular-things-items .popular-things-image .popular-things-tag .site-icons { top: 110px; left: 175px; } }
-
-@media all and (max-width: 991px) { .popular-things .popular-things-items .popular-things-image .popular-things-tag .site-icons { top: 135px; left: 205px; } }
-
-@media all and (max-width: 767px) { .popular-things .popular-things-items .popular-things-image .popular-things-tag .site-icons { top: 250px; left: 360px; } }
-
-.popular-things .popular-things-items .popular-things-content .popular-things-heading h4 a { font-size: 18px; color: #000; font-weight: 700; text-decoration: none; padding-left: 20px; }
+.popular-things .popular-things-items .popular-things-content .popular-things-heading h4 a { font-size: 18px; color: #000; font-weight: 700; text-decoration: none; }
 
 @media all and (max-width: 1199px) { .popular-things .popular-things-items .popular-things-content .popular-things-heading h4 a { font-size: 16px; } }
 
-.popular-things .popular-things-items .popular-things-content .pera-text { color: #A1A1A1; font-size: 14px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; text-align: left; padding-bottom: 0; padding-left: 20px; }
+.popular-things .popular-things-items .popular-things-content .pera-text { color: #A1A1A1; font-size: 14px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; text-align: left; padding-bottom: 0; }
 
-.popular-things .popular-things-items .popular-things-content .phone-address { display: flex; padding-left: 20px; }
+.popular-things .popular-things-items .popular-things-content .phone-address { display: flex; }
 
 .popular-things .popular-things-items .popular-things-content .phone-address p { color: #000; padding-bottom: 0; }
 
@@ -240,21 +245,15 @@ header.scrolled { background: #171a21 !important; padding: 10px 0; -webkit-trans
 
 .popular-things .popular-things-items .popular-things-content .phone-address p .location-icon { margin-left: 25px; }
 
-.popular-things .popular-things-items .popular-things-content .popular-things-footer { border-top: 2px solid #EEEEFE; display: flex; }
+.popular-things .popular-things-items .popular-things-footer { border-top: 2px solid #EEEEFE; display: block; padding: 0 20px; }
 
-.popular-things .popular-things-items .popular-things-content .popular-things-footer p { color: #000; margin-top: 20px; padding-bottom: 0; }
+.popular-things .popular-things-items .popular-things-footer p { color: #000; margin-top: 20px; padding-bottom: 0; text-align: left; float: left; }
 
-.popular-things .popular-things-items .popular-things-content .popular-things-footer p i { background: #DD9934; height: 30px; width: 30px; border-radius: 50%; padding-top: 7px; margin: 0 5px 0 20px; color: #ffffff; }
+.popular-things .popular-things-items .popular-things-footer p i { background: #DD9934; height: 30px; width: 30px; border-radius: 50%; padding-top: 7px; margin-right: 5px; color: #ffffff; text-align: center; }
 
-@media all and (max-width: 1199px) { .popular-things .popular-things-items .popular-things-content .popular-things-footer p i { margin: 0 5px 0 15px; } }
+.popular-things .popular-things-items .popular-things-footer .activities-icon-one { float: right; color: #A1A1A1; margin-top: 30px; font-size: 16px; }
 
-.popular-things .popular-things-items .popular-things-content .popular-things-footer .activities-icon-one { color: #A1A1A1; margin-top: 30px; padding-left: 90px; }
-
-@media all and (max-width: 1199px) { .popular-things .popular-things-items .popular-things-content .popular-things-footer .activities-icon-one { padding-left: 45px; } }
-
-@media all and (max-width: 767px) { .popular-things .popular-things-items .popular-things-content .popular-things-footer .activities-icon-one { padding-left: 90px; } }
-
-.popular-things .popular-things-items .popular-things-content .popular-things-footer .activities-icon-two { color: #A1A1A1; height: 30px; width: 30px; border-radius: 50%; background: #EEEEFE; margin: 20px 0 0 25px; padding: 8px; }
+.popular-things .popular-things-items .popular-things-footer .activities-icon-two { float: right; color: #A1A1A1; height: 30px; width: 30px; border-radius: 50%; background: #EEEEFE; margin: 20px 0 0 25px; padding: 8px; font-size: 16px; }
 
 .trending-cities h3 { text-align: center; font-size: 25px; font-weight: 600; color: #000; line-height: 20px; padding: 70px 0 10px 0; }
 
@@ -386,7 +385,9 @@ header.scrolled { background: #171a21 !important; padding: 10px 0; -webkit-trans
 
 .call-to-action .property-text p { color: #ffffff; font-size: 14px; }
 
-.call-to-action .submit-btn { background-color: #ffffff; padding: 12px 30px; color: #234DD4; font-size: 14px; border-radius: 8px; font-weight: 600; border: none; }
+.call-to-action .submit-btn { background-color: #ffffff; padding: 12px 30px; color: #234DD4; font-size: 14px; border-radius: 8px; font-weight: 600; border: none; -webkit-transition: 0.75s ease; -o-transition: 0.75s ease; transition: 0.75s ease; }
+
+.call-to-action .submit-btn:hover { background-color: #234DD4; color: #ffffff; }
 
 .call-to-action .action-btn { text-align: right; }
 

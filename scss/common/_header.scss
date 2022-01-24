@@ -98,7 +98,7 @@ header {
               color: $white;
               @include transition(0.75s ease);
             }
-            color: red;
+            color: $brand-color;
           }
         }
 
@@ -106,7 +106,7 @@ header {
           font-weight: 600;
           padding-left: 10px;
           .nav-link:hover {
-            color: red;
+            color: $black;
           }
           a {
             i {
@@ -136,7 +136,7 @@ header {
               text-decoration: none;
               color: $white;
               &:hover {
-                color: red;
+                color: $black;
                 @include transition(0.75s ease);
               }
             }
@@ -158,6 +158,10 @@ header {
           i {
             margin-right: 5px;
             font-size: 12px;
+          }
+          &.scrolled{
+            background-color: $brand-color;
+            color: $white;
           }
 
         }

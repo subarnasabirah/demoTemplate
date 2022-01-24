@@ -25,7 +25,14 @@
         border-radius: 8px;
         font-weight: 600;
         border: none;
+        @include transition(0.75s ease);
+        &:hover{
+            background-color: $brand-color;
+            color: $white;
+
+        }
     }
+
     .action-btn{
          @include media('sm') {
              text-align: center;

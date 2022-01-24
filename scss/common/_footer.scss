@@ -11,6 +11,10 @@
             li{
                 padding-top: 10px;
                 font-size: 14px;
+                @include transition(0.75s ease);
+                &:hover{
+                    padding-left: 10px;
+                }
                 i{
                     padding-right: 10px;
                 }
@@ -21,17 +25,23 @@
          p{
             color: $white;
             font-size: 16px;
+            padding-top: 10px;
         }
         ul{
             li{
                 padding-top: 10px;
                 font-size: 14px;
+                @include transition(0.75s ease);
+                &:hover{
+                    padding-left: 10px;
+                }
             }
         }
         .spam-text{
             font-size: 14px;
         }
         .submit-btn{
+            position: relative;
             .email-input{
                 position: relative;
                 border: none;
@@ -42,13 +52,22 @@
                 width: 100%;
             }
             .subscribe-btn{
+                @include media('md') {
+                   left: 129px;
+                }
+                 @include media('sm') {
+                   left: 158px;
+                }
+                @include media('xs') {
+                   left: 186px;
+                }
                 position: absolute;
                 padding: 8px 12px;
                 border-radius: 5px;
                 background-color: $brand-color;
                 color: $white;
                 border: none;
-                right: 210px;
+                left: 186px;
                 margin-top: 5px;
                 font-size: 12px;
             }
@@ -56,6 +75,22 @@
         
 
     }
+    @include media('md') {
+        .company{
+            margin-bottom: 30px;
+        }
+        .contact-us{
+            margin-bottom: 30px;
+        }   
+                         
+    }
+    @include media('sm') {
+        .Discover{
+            margin-bottom: 30px;
+        }
+
+    }
+    
     
     
 }
@@ -74,7 +109,11 @@
                     
                     color: $white;
                     padding-right: 15px;
+                    &:hover{
+                        color: $brand-color;
+                    }
                 }
+
             }
         }
     }
