@@ -12,7 +12,7 @@ h1.h1_ { margin-top: 100px; }
 
 .ex_c:hover { color: green; font-size: 600%; cursor: pointer; position: absolute; }
 
-.footer-bg { background-color: #1D293F; color: #ffffff; padding: 70px 0; }
+.footer-bg { background-color: #1d293f; color: #ffffff; padding: 70px 0; }
 
 .footer-bg .contact-us p { color: #ffffff; font-size: 18px; }
 
@@ -36,20 +36,20 @@ h1.h1_ { margin-top: 100px; }
 
 .footer-bg .footer-list .submit-btn .subscribe-btn { position: absolute; padding: 8px 12px; border-radius: 5px; background-color: #234DD4; color: #ffffff; border: none; left: 186px; margin-top: 5px; font-size: 12px; }
 
-@media all and (max-width: 991px) { .footer-bg .footer-list .submit-btn .subscribe-btn { left: 129px; } }
-
-@media all and (max-width: 767px) { .footer-bg .footer-list .submit-btn .subscribe-btn { left: 158px; } }
-
-@media all and (max-width: 575px) { .footer-bg .footer-list .submit-btn .subscribe-btn { left: 186px; } }
-
 @media all and (max-width: 991px) { .footer-bg .company { margin-bottom: 30px; }
   .footer-bg .contact-us { margin-bottom: 30px; } }
 
 @media all and (max-width: 767px) { .footer-bg .Discover { margin-bottom: 30px; } }
 
-.footer-bottom { background-color: #1D293F; color: #ffffff; border-top: 1px solid #2D374B; padding: 20px 0; }
+.footer-bottom { background-color: #1d293f; color: #ffffff; border-top: 1px solid #2d374b; padding: 20px 0; }
+
+@media all and (max-width: 767px) { .footer-bottom .reserved-text { text-align: center; } }
+
+.footer-bottom .guido-logo { text-align: center; }
 
 .footer-bottom .social-icon { text-align: right; }
+
+@media all and (max-width: 767px) { .footer-bottom .social-icon { text-align: center; } }
 
 .footer-bottom .social-icon ul li { display: inline-block; }
 
@@ -128,7 +128,7 @@ header .navbar .navbar-nav li .listing-btn.scrolled { background-color: #234DD4;
 
 @media all and (max-width: 575px) { .banner-img { height: 75vh; } }
 
-.banner-img::before { content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100vh; background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)); }
+.banner-img::before { content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 100vh; background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)); }
 
 @media all and (max-width: 991px) { .banner-img::before { height: 80vh; } }
 
@@ -150,7 +150,7 @@ header .navbar .navbar-nav li .listing-btn.scrolled { background-color: #234DD4;
 
 .banner-img .banner-img-content .middle-search-box .where-label { margin-left: 5px; }
 
-.banner-img .banner-img-content .middle-search-box .where-label::before { content: ' '; position: absolute; background: #efefef; height: 40px; width: 1px; top: 10px; right: 335px; margin-right: 5px; }
+.banner-img .banner-img-content .middle-search-box .where-label::before { content: " "; position: absolute; background: #efefef; height: 40px; width: 1px; top: 10px; right: 335px; margin-right: 5px; }
 
 .banner-img .banner-img-content .middle-search-box input { background-color: transparent; border: none; }
 
@@ -209,7 +209,7 @@ header.scrolled { background: #171a21 !important; padding: 10px 0; -webkit-trans
 
 .popular-things p { text-align: center; font-size: 14px; font-weight: 400; color: #A1A1A1; padding-bottom: 30px; }
 
-.popular-things .popular-things-items { position: relative; overflow: hidden; border: 2px solid #EEEEFE; border-radius: 10px; }
+.popular-things .popular-things-items { position: relative; overflow: hidden; border: 2px solid #eeeefe; border-radius: 10px; }
 
 .popular-things .popular-things-items .popular-things-image { position: relative; overflow: hidden; }
 
@@ -219,7 +219,7 @@ header.scrolled { background: #171a21 !important; padding: 10px 0; -webkit-trans
 
 .popular-things .popular-things-items .popular-things-tag .open { text-decoration: none; color: #ffffff; padding: 8px 14px; border: 1px solid #ffffff; border-radius: 10px; margin-right: 8px; }
 
-.popular-things .popular-things-items .featured { text-decoration: none; color: #ffffff; padding: 8px 14px; background: #ED4949; border-radius: 8px; font-size: 14px; position: absolute; right: 25px; top: 22px; }
+.popular-things .popular-things-items .featured { text-decoration: none; color: #ffffff; padding: 8px 14px; background: #ed4949; border-radius: 8px; font-size: 14px; position: absolute; right: 25px; top: 22px; }
 
 .popular-things .popular-things-items .rieviews { display: flex; position: absolute; bottom: -25px; left: 20px; }
 
@@ -245,15 +245,15 @@ header.scrolled { background: #171a21 !important; padding: 10px 0; -webkit-trans
 
 .popular-things .popular-things-items .popular-things-content .phone-address p .location-icon { margin-left: 25px; }
 
-.popular-things .popular-things-items .popular-things-footer { border-top: 2px solid #EEEEFE; display: block; padding: 0 20px; }
+.popular-things .popular-things-items .popular-things-footer { border-top: 2px solid #eeeefe; display: block; padding: 0 20px; }
 
 .popular-things .popular-things-items .popular-things-footer p { color: #000; margin-top: 20px; padding-bottom: 0; text-align: left; float: left; }
 
-.popular-things .popular-things-items .popular-things-footer p i { background: #DD9934; height: 30px; width: 30px; border-radius: 50%; padding-top: 7px; margin-right: 5px; color: #ffffff; text-align: center; }
+.popular-things .popular-things-items .popular-things-footer p i { background: #dd9934; height: 30px; width: 30px; border-radius: 50%; padding-top: 7px; margin-right: 5px; color: #ffffff; text-align: center; }
 
 .popular-things .popular-things-items .popular-things-footer .activities-icon-one { float: right; color: #A1A1A1; margin-top: 30px; font-size: 16px; }
 
-.popular-things .popular-things-items .popular-things-footer .activities-icon-two { float: right; color: #A1A1A1; height: 30px; width: 30px; border-radius: 50%; background: #EEEEFE; margin: 20px 0 0 25px; padding: 8px; font-size: 16px; }
+.popular-things .popular-things-items .popular-things-footer .activities-icon-two { float: right; color: #a1a1a1; height: 30px; width: 30px; border-radius: 50%; background: #eeeefe; margin: 20px 0 0 25px; padding: 8px; font-size: 16px; }
 
 .trending-cities h3 { text-align: center; font-size: 25px; font-weight: 600; color: #000; line-height: 20px; padding: 70px 0 10px 0; }
 
@@ -263,11 +263,11 @@ header.scrolled { background: #171a21 !important; padding: 10px 0; -webkit-trans
 
 @media all and (max-width: 767px) { .trending-cities .trending-cities-img .miami-img-one { margin-bottom: 20px; } }
 
-.trending-cities .trending-cities-img .miami-img-one img { display: block; width: 100%; height: 275px; border-radius: 8px; transition: transform .5s ease; }
+.trending-cities .trending-cities-img .miami-img-one img { display: block; width: 100%; height: 275px; border-radius: 8px; transition: transform 0.5s ease; }
 
 .trending-cities .trending-cities-img .miami-img-one img:hover { transform: scale(1.5); }
 
-.trending-cities .trending-cities-img .miami-img-one::after { content: ''; position: absolute; left: 0; top: 0; height: 100%; width: 100%; background-image: linear-gradient(60deg, #000000 0%, #171a21 100%); opacity: .6; border-radius: 8px; }
+.trending-cities .trending-cities-img .miami-img-one::after { content: ""; position: absolute; left: 0; top: 0; height: 100%; width: 100%; background-image: linear-gradient(60deg, #000000 0%, #171a21 100%); opacity: 0.6; border-radius: 8px; }
 
 .trending-cities .trending-cities-img .miami-img-one .miami-content { position: absolute; z-index: 999; top: 75%; left: 45%; }
 
@@ -279,7 +279,7 @@ header.scrolled { background: #171a21 !important; padding: 10px 0; -webkit-trans
 
 .trending-cities .trending-cities-img .miami-img-two img { display: block; width: 100%; height: 275px; border-radius: 8px; }
 
-.trending-cities .trending-cities-img .miami-img-two::after { content: ''; position: absolute; left: 0; top: 0; height: 100%; width: 100%; background-image: linear-gradient(60deg, #000000 0%, #171a21 100%); opacity: .6; border-radius: 8px; }
+.trending-cities .trending-cities-img .miami-img-two::after { content: ""; position: absolute; left: 0; top: 0; height: 100%; width: 100%; background-image: linear-gradient(60deg, #000000 0%, #171a21 100%); opacity: 0.6; border-radius: 8px; }
 
 @media all and (max-width: 767px) { .trending-cities .trending-cities-img .responsive-pdng { margin-bottom: 20px; } }
 
@@ -323,7 +323,7 @@ header.scrolled { background: #171a21 !important; padding: 10px 0; -webkit-trans
 
 @media all and (max-width: 767px) { .resturant-img { height: 60vh; } }
 
-.resturant-img::before { content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 80vh; background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)); }
+.resturant-img::before { content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 80vh; background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)); }
 
 @media all and (max-width: 767px) { .resturant-img::before { height: 60vh; } }
 
@@ -345,7 +345,7 @@ header.scrolled { background: #171a21 !important; padding: 10px 0; -webkit-trans
 
 .news-tips p { text-align: center; font-size: 14px; font-weight: 400; color: #A1A1A1; padding-bottom: 30px; }
 
-.news-tips .news-tips-items { overflow: hidden; border: 2px solid #EEEEFE; border-radius: 10px; }
+.news-tips .news-tips-items { overflow: hidden; border: 2px solid #eeeefe; border-radius: 10px; }
 
 @media all and (max-width: 767px) { .news-tips .news-tips-items { margin-bottom: 20px; } }
 
@@ -387,7 +387,7 @@ header.scrolled { background: #171a21 !important; padding: 10px 0; -webkit-trans
 
 .call-to-action .submit-btn { background-color: #ffffff; padding: 12px 30px; color: #234DD4; font-size: 14px; border-radius: 8px; font-weight: 600; border: none; -webkit-transition: 0.75s ease; -o-transition: 0.75s ease; transition: 0.75s ease; }
 
-.call-to-action .submit-btn:hover { background-color: #234DD4; color: #ffffff; }
+.call-to-action .submit-btn:hover { background-color: #234DD4; border: 1px solid #ffffff; color: #ffffff; }
 
 .call-to-action .action-btn { text-align: right; }
 

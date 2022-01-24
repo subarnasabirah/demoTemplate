@@ -1,22 +1,21 @@
-.container-bg{
+.container-bg {
     margin-top: -60px;
     background: $white;
     border-radius: 10px 10px 0 0;
-     @include media('xs') {
+    @include media("xs") {
         margin-top: 20px;
         border-radius: none;
-     }
+    }
 }
 
-.services{
+.services {
     // display: flex;
     // flex-wrap: nowrap;
     padding: 20px;
-    .service-item{
-        @include media('xs') {
+    .service-item {
+        @include media("xs") {
             display: block;
             margin: 15px auto;
-
         }
         background: $contnt-bg-color;
         border-radius: 8px;
@@ -24,15 +23,17 @@
         width: 200px;
         max-width: 100%;
         margin: 10px;
-        i{
+        i {
             padding-top: 50px;
             color: $brand-color;
         }
-        p{
+        p {
             padding: 15px 0 15px 0;
             color: $black;
         }
-        &:hover, &:hover i, &:hover p{
+        &:hover,
+        &:hover i,
+        &:hover p {
             background: $brand-color;
             border-radius: 8px;
             color: $white;

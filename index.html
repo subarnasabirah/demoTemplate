@@ -13,801 +13,836 @@
     <!-- Favicon icon -->
     <link rel="icon" href="img/favicon.png" type="image/png">
 </head>
-
 <body>
-    
-    <!-- =========== Navbar start ========== -->
-    <header id="home">
-        <!-- <div class="container-fluid"> -->
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid mx-auto">
-                    <a href="javascript: " class="navbar-brand">Guido</a>
-                    <div class="form-group search-box">
-                        <span class="fa fa-search form-control-feedback"></span>
-                        <input type="text" class="form-control shadow-none" placeholder="What are you looking for?">
-                    </div>
-                        <!-- Toggle button -->
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <i class="fas fa-bars bar-icon" aria-hidden="true"></i>
-                        </button>
-                        
-                        
-                        <!-- Collapsible wrapper -->
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a href="javascript: " class="nav-link">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="javascript: " class="nav-link">Explore</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="javascript: " class="nav-link">Listings</a>
-                            </li>
-                            <!-- Navbar dropdown -->
-                            <li class="nav-item">
-                                <a href="#" onclick="return false" class="nav-link">Blog <i class="fas fa-angle-down down_img"></i>
-                                </a>
-                                <ul class="dropdown drpdwn-item">
-                                    <li><a href="about.html">about us</a></li>
-                                    <li><a href="single-project.html">single projects</a></li>
-                                    <li><a href="blog.html">Our Blog</a></li>
-                                    <li><a href="single-blog.html">Single Blog</a></li>
-                                    <li><a href="contact.html">contact us</a></li>
-                                    <li><a href="comming-soon.html">Coming Soon</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a href="javascript: " class="nav-link">
-                                <i class="far fa-user"></i>  Login/Sign Up
-                                </a>
+<!-- =========== Navbar start ========== -->
+<header id="home">
+    <!-- <div class="container-fluid"> -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid mx-auto">
+            <a href="javascript: " class="navbar-brand">Guido</a>
+            <div class="form-group search-box">
+                <span class="fa fa-search form-control-feedback"></span>
+                <input type="text" class="form-control shadow-none" placeholder="What are you looking for?">
+            </div>
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars bar-icon" aria-hidden="true"></i>
+            </button>
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a href="javascript: " class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript: " class="nav-link">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript: " class="nav-link">Listings</a>
+                    </li>
+                    <!-- Navbar dropdown -->
+                    <li class="nav-item">
+                        <a href="#" onclick="return false" class="nav-link">Blog <i class="fas fa-angle-down down_img"></i>
+                        </a>
+                        <ul class="dropdown drpdwn-item">
+                            <li>
+                                <a href="about.html">about us</a>
                             </li>
                             <li>
-                                <a href="javascript: " class="btn listing-btn">
-                                    <i class="fas fa-plus"></i>
-                                    Add Listing
-                                </a>
+                                <a href="single-project.html">single projects</a>
+                            </li>
+                            <li>
+                                <a href="blog.html">Our Blog</a>
+                            </li>
+                            <li>
+                                <a href="single-blog.html">Single Blog</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">contact us</a>
+                            </li>
+                            <li>
+                                <a href="comming-soon.html">Coming Soon</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript: " class="nav-link">
+                            <i class="far fa-user"></i> Login/Sign Up </a>
+                    </li>
+                    <li>
+                        <a href="javascript: " class="btn listing-btn">
+                            <i class="fas fa-plus"></i> Add Listing </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- </div> -->
+</header>
+<!-- =========== Banner image area ========== -->
+<section class="banner-img w-100  d-flex justify-content-center align-items-center">
+    <article class="banner-img-content text-center">
+        <h1>Explore Amazing Destinations</h1>
+        <p>Find great places to stay, eat, shop or visit from local experts.</p>
+        <form action="">
+            <div class="form-group middle-search-box">
+                <label for="">What</label>
+                <input type="text" class="form-control shadow-none what-input" placeholder="Ex: shopping and restaurant...">
+                <label for="" class="where-label">Where</label>
+                <input type="text" class="form-control shadow-none where-input" placeholder="Your City">
+                <span class="fa fa-search form-control-feedback"></span>
+            </div>
+        </form>
+        <form action="" class="responsive-search-area">
+            <div class="form-group responsive-search-box">
+                <label for="whatInputRes">What</label>
+                <input type="text" class="form-control what-input-respsv" id="whatInputRes" placeholder="Ex: shopping and restaurant...">
+            </div>
+            <div class="form-group responsive-search-box">
+                <label for="whereInputRes" class="where-label">Where</label>
+                <input type="text" class="form-control where-input-respsv" id="whereInputRes" placeholder="Your City">
+                <span class="fa fa-search form-control-feedback"></span>
+            </div>
+        </form>
+    </article>
+</section>
+<!-- =========== Main Area ========== -->
+<main>
+    <div class="container container-bg">
+        <!-- Service Items Section -->
+        <section>
+            <div class="services">
+                <div class="row">
+                    <div class="col-xl-2 col-md-4 col-sm-6">
+                        <div class="service-item">
+                            <i class="fas fa-utensils"></i>
+                            <p>Restaurant</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-6">
+                        <div class="service-item">
+                            <i class="fas fa-utensils"></i>
+                            <p>Restaurant</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-6">
+                        <div class="service-item">
+                            <i class="fas fa-utensils"></i>
+                            <p>Restaurant</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-6">
+                        <div class="service-item">
+                            <i class="fas fa-utensils"></i>
+                            <p>Restaurant</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-6">
+                        <div class="service-item">
+                            <i class="fas fa-utensils"></i>
+                            <p>Restaurant</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-6">
+                        <div class="service-item">
+                            <i class="fas fa-utensils"></i>
+                            <p>Restaurant</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Popular Things Section -->
+        <section class="popular-things" id="popularThings">
+            <h3>The Most Popular Things to Do in the City</h3>
+            <p>Discover some of the most popular listings in Toronto based on user reviews and ratings.</p>
+            <div class="popular-things-area">
+                <!-- <div class="row"> -->
+                <!-- Popular things area carousel -->
+                <div class="row pa-margintop">
+                    <div class="dot-list owl-carousel">
+                        <!-- popular-things-one -->
+                        <div class="col-xl-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="popular-things-items">
+                                <!-- Image -->
+                                <div class="popular-things-image">
+                                    <img src="img/popular/1.jpg" alt="blog-img">
+                                    <div class="popular-things-tag">
+                                        <a href="#" class="open">$$$$$</a>
+                                        <a href="#" class="open">Open</a>
+                                    </div>
+                                    <div class="featured-btn">
+                                        <a href="#" class="featured">Featured</a>
+                                    </div>
+                                    <div class="rieviews">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <p>(5 reviews)</p>
+                                    </div>
+                                </div>
+                                <!-- popular-things-content -->
+                                <div class="popular-things-content">
+                                    <div class="site-icons">
+                                        <i class="fab fa-servicestack"></i>
+                                    </div>
+                                    <div class="popular-things-heading">
+                                        <h4>
+                                            <a href="#">Adventure High Ropes</a>
+                                        </h4>
+                                    </div>
+                                    <p class="pera-text">Lorem ipsum dolor mauris lectus,a ultricies nisi faucibus nec.elementum faucibus nec.</p>
+                                    <div class="phone-address">
+                                        <p>
+                                            <i class="fa fa-phone" aria-hidden="true"></i> +61-8181-123
+                                        </p>
+                                        <p>
+                                            <i class="fas fa-map-marker-alt location-icon"></i> New York
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="popular-things-footer">
+                                    <p>
+                                        <i class="fab fa-servicestack"></i> Outdoor Activities
+                                    </p>
+                                    <i class="far fa-heart activities-icon-two"></i>
+                                    <i class="fas fa-search-plus activities-icon-one"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- popular-things-one -->
+                        <div class="col-xl-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="popular-things-items">
+                                <!-- Image -->
+                                <div class="popular-things-image">
+                                    <img src="img/popular/1.jpg" alt="blog-img">
+                                    <div class="popular-things-tag">
+                                        <a href="#" class="open">$$$$$</a>
+                                        <a href="#" class="open">Open</a>
+                                    </div>
+                                    <div class="rieviews">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <p>(5 reviews)</p>
+                                    </div>
+                                </div>
+                                <!-- popular-things-content -->
+                                <div class="popular-things-content">
+                                    <div class="site-icons">
+                                        <i class="fab fa-servicestack"></i>
+                                    </div>
+                                    <div class="popular-things-heading">
+                                        <h4>
+                                            <a href="#">Adventure High Ropes</a>
+                                        </h4>
+                                    </div>
+                                    <p class="pera-text">Lorem ipsum dolor mauris lectus,a ultricies nisi faucibus nec.elementum faucibus nec. </p>
+                                    <div class="phone-address">
+                                        <p>
+                                            <i class="fa fa-phone" aria-hidden="true"></i> +61-8181-123
+                                        </p>
+                                        <p>
+                                            <i class="fas fa-map-marker-alt location-icon"></i> New York
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="popular-things-footer">
+                                    <p>
+                                        <i class="fab fa-servicestack"></i> Outdoor Activities
+                                    </p>
+                                    <i class="far fa-heart activities-icon-two"></i>
+                                    <i class="fas fa-search-plus activities-icon-one"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- popular-things-one -->
+                        <div class="col-xl-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="popular-things-items">
+                                <!-- Image -->
+                                <div class="popular-things-image">
+                                    <img src="img/popular/1.jpg" alt="blog-img">
+                                    <div class="popular-things-tag">
+                                        <a href="#" class="open">$$$$$</a>
+                                        <a href="#" class="open">Open</a>
+                                    </div>
+                                    <div class="rieviews">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <p>(5 reviews)</p>
+                                    </div>
+                                </div>
+                                <!-- popular-things-content -->
+                                <div class="popular-things-content">
+                                    <div class="site-icons">
+                                        <i class="fab fa-servicestack"></i>
+                                    </div>
+                                    <div class="popular-things-heading">
+                                        <h4>
+                                            <a href="#">Adventure High Ropes</a>
+                                        </h4>
+                                    </div>
+                                    <p class="pera-text">Lorem ipsum dolor mauris lectus,a ultricies nisi faucibus nec.elementum faucibus nec. </p>
+                                    <div class="phone-address">
+                                        <p>
+                                            <i class="fa fa-phone" aria-hidden="true"></i> +61-8181-123
+                                        </p>
+                                        <p>
+                                            <i class="fas fa-map-marker-alt location-icon"></i> New York
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="popular-things-footer">
+                                    <p>
+                                        <i class="fab fa-servicestack"></i> Outdoor Activities
+                                    </p>
+                                    <i class="far fa-heart activities-icon-two"></i>
+                                    <i class="fas fa-search-plus activities-icon-one"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- popular-things-one -->
+                        <div class="col-xl-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="popular-things-items">
+                                <!-- Image -->
+                                <div class="popular-things-image">
+                                    <img src="img/popular/1.jpg" alt="blog-img">
+                                    <div class="popular-things-tag">
+                                        <a href="#" class="open">$$$$$</a>
+                                        <a href="#" class="open">Open</a>
+                                    </div>
+                                    <div class="featured-btn">
+                                        <a href="#" class="featured">Featured</a>
+                                    </div>
+                                    <div class="rieviews">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <p>(5 reviews)</p>
+                                    </div>
+                                </div>
+                                <!-- popular-things-content -->
+                                <div class="popular-things-content">
+                                    <div class="site-icons">
+                                        <i class="fab fa-servicestack"></i>
+                                    </div>
+                                    <div class="popular-things-heading">
+                                        <h4>
+                                            <a href="#">Adventure High Ropes</a>
+                                        </h4>
+                                    </div>
+                                    <p class="pera-text">Lorem ipsum dolor mauris lectus,a ultricies nisi faucibus nec.elementum faucibus nec. </p>
+                                    <div class="phone-address">
+                                        <p>
+                                            <i class="fa fa-phone" aria-hidden="true"></i> +61-8181-123
+                                        </p>
+                                        <p>
+                                            <i class="fas fa-map-marker-alt location-icon"></i> New York
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="popular-things-footer">
+                                    <p>
+                                        <i class="fab fa-servicestack"></i> Outdoor Activities
+                                    </p>
+                                    <i class="far fa-heart activities-icon-two"></i>
+                                    <i class="fas fa-search-plus activities-icon-one"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- popular-things-one -->
+                        <div class="col-xl-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="popular-things-items">
+                                <!-- Image -->
+                                <div class="popular-things-image">
+                                    <img src="img/popular/1.jpg" alt="blog-img">
+                                    <div class="popular-things-tag">
+                                        <a href="#" class="open">$$$$$</a>
+                                        <a href="#" class="open">Open</a>
+                                    </div>
+                                    <div class="rieviews">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <p>(5 reviews)</p>
+                                    </div>
+                                </div>
+                                <!-- popular-things-content -->
+                                <div class="popular-things-content">
+                                    <div class="site-icons">
+                                        <i class="fab fa-servicestack"></i>
+                                    </div>
+                                    <div class="popular-things-heading">
+                                        <h4>
+                                            <a href="#">Adventure High Ropes</a>
+                                        </h4>
+                                    </div>
+                                    <p class="pera-text">Lorem ipsum dolor mauris lectus,a ultricies nisi faucibus nec.elementum faucibus nec. </p>
+                                    <div class="phone-address">
+                                        <p>
+                                            <i class="fa fa-phone" aria-hidden="true"></i> +61-8181-123
+                                        </p>
+                                        <p>
+                                            <i class="fas fa-map-marker-alt location-icon"></i> New York
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="popular-things-footer">
+                                    <p>
+                                        <i class="fab fa-servicestack"></i> Outdoor Activities
+                                    </p>
+                                    <i class="far fa-heart activities-icon-two"></i>
+                                    <i class="fas fa-search-plus activities-icon-one"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- popular-things-one -->
+                        <div class="col-xl-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="popular-things-items">
+                                <!-- Image -->
+                                <div class="popular-things-image">
+                                    <img src="img/popular/1.jpg" alt="blog-img">
+                                    <div class="popular-things-tag">
+                                        <a href="#" class="open">$$$$$</a>
+                                        <a href="#" class="open">Open</a>
+                                    </div>
+                                    <div class="rieviews">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <p>(5 reviews)</p>
+                                    </div>
+                                </div>
+                                <!-- popular-things-content -->
+                                <div class="popular-things-content">
+                                    <div class="site-icons">
+                                        <i class="fab fa-servicestack"></i>
+                                    </div>
+                                    <div class="popular-things-heading">
+                                        <h4>
+                                            <a href="#">Adventure High Ropes</a>
+                                        </h4>
+                                    </div>
+                                    <p class="pera-text">Lorem ipsum dolor mauris lectus,a ultricies nisi faucibus nec.elementum faucibus nec. </p>
+                                    <div class="phone-address">
+                                        <p>
+                                            <i class="fa fa-phone" aria-hidden="true"></i> +61-8181-123
+                                        </p>
+                                        <p>
+                                            <i class="fas fa-map-marker-alt location-icon"></i> New York
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="popular-things-footer">
+                                    <p>
+                                        <i class="fab fa-servicestack"></i> Outdoor Activities
+                                    </p>
+                                    <i class="far fa-heart activities-icon-two"></i>
+                                    <i class="fas fa-search-plus activities-icon-one"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- </div> -->
+        </section>
+        <!-- Trending Cities Section -->
+        <section class="trending-cities">
+            <h3>Trending Cities</h3>
+            <p>Cities You Must Explore This Summer</p>
+            <div class="trending-cities-img">
+                <div class="row pb-4">
+                    <div class="col-xl-8 col-md-6 col-xs-12">
+                        <div class="miami-img-one">
+                            <img src="img/trending/v.jpg" alt="trending-img-one">
+                            <div class="miami-content">
+                                <h4>Miami</h4>
+                                <p>62 Listings</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 col-xs-12">
+                        <div class="miami-img-two">
+                            <img src="img/trending/o.jpg" alt="trending-image-two">
+                            <div class="miami-content">
+                                <h4>Miami</h4>
+                                <p>62 Listings</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="trending-cities-img">
+                <div class="row">
+                    <div class="col-xl-4 col-md-6 col-xs-12">
+                        <div class="miami-img-two responsive-pdng">
+                            <img src="img/trending/o.jpg" alt="trending-image-three">
+                            <div class="miami-content">
+                                <h4>Miami</h4>
+                                <p>62 Listings</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-8 col-md-6 col-xs-12">
+                        <div class="miami-img-one">
+                            <img src="img/trending/v.jpg" alt="trending-image-four">
+                            <div class="miami-content">
+                                <h4>Miami</h4>
+                                <p>62 Listings</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container-fluid content-fluid-area">
+        <!--How it Works Section -->
+        <section class="how-it-work-section">
+            <div class="container">
+                <h3>How it Works</h3>
+                <p>Bringing Business and community members together</p>
+                <div class="features-box">
+                    <div class="row">
+                        <!-- single-features -->
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-duration="1200" data-aos-easing="ease-in-sine" data-aos-anchor-placement="top-bottom">
+                            <div class="single-features">
+                                <i class="fas fa-chart-pie"></i>
+                                <h4>Find Business</h4>
+                                <p>Lorem ipsum dolor mauris lectus,a ultricies nisi faucibus nec elementum quam. mauris lectus, a ultricies nisi faucibus nec a ultricies nisi faucibus nec elementum.</p>
+                            </div>
+                        </div>
+                        <!-- single-features -->
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-duration="1200" data-aos-easing="ease-in-sine" data-aos-anchor-placement="top-bottom">
+                            <div class="single-features">
+                                <i class="fas fa-backspace"></i>
+                                <h4>Find Business</h4>
+                                <p>Lorem ipsum dolor mauris lectus,a ultricies nisi faucibus nec elementum quam. mauris lectus, a ultricies nisi faucibus nec a ultricies nisi faucibus nec elementum.</p>
+                            </div>
+                        </div>
+                        <!-- single-features -->
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-duration="1200" data-aos-easing="ease-in-sine" data-aos-anchor-placement="top-bottom">
+                            <div class="single-features">
+                                <i class="fa fa-desktop"></i>
+                                <h4>Find Business</h4>
+                                <p>Lorem ipsum dolor mauris lectus,a ultricies nisi faucibus nec elementum quam. mauris lectus, a ultricies nisi faucibus nec a ultricies nisi faucibus nec elementum.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- =====================Testimonia Area=================== -->
+    <section id="testimonial">
+        <div class="client-testimonial">
+            <div class="container">
+                <h3>Testimonials From Our Customers</h3>
+                <p>Lorem ipsum dolor mauris lectus,a ultricies</p>
+                <div class="row">
+                    <div class="dot-list owl-carousel">
+                        <!-- single-features -->
+                        <div class="col-xl-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="single-testimonial">
+                                <div class="client-img">
+                                    <img src="img/clients/1.jpg" alt="clnts-img-one">
+                                </div>
+                                <div class="testimonial-content">
+                                    <h5>Albert Cole</h5>
+                                    <h6>CEO of abc news</h6>
+                                    <p>“Lorem ipsum dolor mauris lectus,a ultricies nisi faucibus nec.elementum quam. mauris lectus, a ultricies nisi faucibus nec.”</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- single-features -->
+                        <div class="col-xl-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="single-testimonial">
+                                <div class="client-img">
+                                    <img src="img/clients/2.jpg" alt="clnts-img-one">
+                                </div>
+                                <div class="testimonial-content">
+                                    <h5>Alison Down</h5>
+                                    <h6>CEO of abc news</h6>
+                                    <p>“Lorem ipsum dolor mauris lectus,a ultricies nisi faucibus nec.elementum quam. mauris lectus, a ultricies nisi faucibus nec.”</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- single-features -->
+                        <div class="col-xl-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="single-testimonial">
+                                <div class="client-img">
+                                    <img src="img/clients/3.jpg" alt="clnts-img-one">
+                                </div>
+                                <div class="testimonial-content">
+                                    <h5>Daniel Parker</h5>
+                                    <h6>CEO of abc news</h6>
+                                    <p>“Lorem ipsum dolor mauris lectus,a ultricies nisi faucibus nec.elementum quam. mauris lectus, a ultricies nisi faucibus nec.”</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- single-features -->
+                        <div class="col-xl-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="single-testimonial">
+                                <div class="client-img">
+                                    <img src="img/clients/1.jpg" alt="clnts-img-one">
+                                </div>
+                                <div class="testimonial-content">
+                                    <h5>john <span>doe</span>
+                                    </h5>
+                                    <h6>CEO of abc news</h6>
+                                    <p>“Lorem ipsum dolor mauris lectus,a ultricies nisi faucibus nec.elementum quam. mauris lectus, a ultricies nisi faucibus nec.”</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--- ===================== Business Exposure Area ==================== -->
+    <section class="resturant-img w-100 d-flex justify-content-center align-items-center">
+        <article class="resturant-img-content text-center">
+            <h2>Get Business Exposure</h2>
+            <h3>Your business deserves efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas.</h3>
+            <a href="" class="works-btn">How It Works</a>
+        </article>
+    </section>
+    <section class="news-tips">
+        <div class="container">
+            <h3>News & Tips</h3>
+            <p>Checkout Latest News And Articles From Our Blog</p>
+            <!-- Popular things area carousel -->
+            <div class="row pa-margintop">
+                <!-- popular-things-one -->
+                <div class="col-xl-4 col-md-4 col-xs-12">
+                    <div class="news-tips-items">
+                        <!-- Image -->
+                        <div class="news-tips-image">
+                            <img src="img/popular/1.jpg" alt="blog-img">
+                            <div class="news-tips-tag">
+                                <a href="#" class="featured">Health & Care</a>
+                            </div>
+                        </div>
+                        <!-- popular-things-content -->
+                        <div class="news-tips-content">
+                            <div class="phone-address">
+                                <p>
+                                    <i class="fas fa-user"></i> Jack Wilson
+                                </p>
+                                <p>
+                                    <i class="far fa-calendar calender-icon"></i> 06 April, 2020
+                                </p>
+                            </div>
+                            <div class="news-tips-heading">
+                                <h4>The Top 25 Bike Stores in Toronto by Neighbourhood</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- popular-things-one -->
+                <div class="col-xl-4 col-md-4 col-xs-12">
+                    <div class="news-tips-items">
+                        <!-- Image -->
+                        <div class="news-tips-image">
+                            <img src="img/popular/1.jpg" alt="blog-img">
+                            <div class="news-tips-tag">
+                                <a href="#" class="featured">Culture</a>
+                            </div>
+                        </div>
+                        <!-- popular-things-content -->
+                        <div class="news-tips-content">
+                            <div class="phone-address">
+                                <p>
+                                    <i class="fas fa-user"></i> Jack Wilson
+                                </p>
+                                <p>
+                                    <i class="far fa-calendar calender-icon"></i> 06 April, 2020
+                                </p>
+                            </div>
+                            <div class="news-tips-heading">
+                                <h4>The Top 25 Bike Stores in Toronto by Neighbourhood</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- popular-things-one -->
+                <div class="col-xl-4 col-md-4 col-xs-12">
+                    <div class="news-tips-items">
+                        <!-- Image -->
+                        <div class="news-tips-image">
+                            <img src="img/popular/1.jpg" alt="blog-img">
+                            <div class="news-tips-tag">
+                                <a href="#" class="featured">Travelling</a>
+                            </div>
+                        </div>
+                        <!-- popular-things-content -->
+                        <div class="news-tips-content">
+                            <div class="phone-address">
+                                <p>
+                                    <i class="fas fa-user"></i> Jack Wilson
+                                </p>
+                                <p>
+                                    <i class="far fa-calendar calender-icon"></i> 06 April, 2020
+                                </p>
+                            </div>
+                            <div class="news-tips-heading">
+                                <h4>The Top 25 Bike Stores in Toronto by Neighbourhood</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =============== Submit Property Section ================ -->
+    <section class="call-to-action">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 col-md-8 col-sm-12">
+                    <div class="property-text">
+                        <h4>Submit Your Property Today!</h4>
+                        <p>Explore some of the best tips from around the city from our partners and friends.</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 col-sm-12">
+                    <div class="action-btn">
+                        <button type="submit" class="submit-btn">Submit Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <div class="contact-us">
+                        <p>Contact Us</p>
+                        <ul>
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>329 Queensbery street, North Melbourne VIC 3051, Australia
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>123 568 258
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>support@skola.com
                             </li>
                         </ul>
                     </div>
                 </div>
-
-            </nav>
-        <!-- </div> -->
-
-        
-    </header>
-<!-- =========== Banner image area ========== -->
-    <section class="banner-img w-100  d-flex justify-content-center align-items-center">
-        <article class="banner-img-content text-center">     
-            <h1>Explore Amazing Destinations</h1>
-            <p>Find great places to stay, eat, shop or visit from local experts.</p>
-            <form action="">
-                <div class="form-group middle-search-box">
-                    <label for="">What</label>
-                    <input type="text" class="form-control shadow-none what-input" placeholder="Ex: shopping and restaurant...">
-                    <label for="" class="where-label" >Where</label>
-                    <input type="text" class="form-control shadow-none where-input" placeholder="Your City">
-                    <span class="fa fa-search form-control-feedback"></span>
+                <div class="col-xl-3 col-lg-2 col-md-6 col-sm-6">
+                    <div class="company footer-list">
+                        <p>Company</p>
+                        <ul>
+                            <li>Help Center</li>
+                            <li>About</li>
+                            <li>Careers</li>
+                            <li>How it Works</li>
+                            <li>Articles and Tips</li>
+                            <li>Torms of service</li>
+                        </ul>
+                    </div>
                 </div>
-            </form>
-            <form action="" class="responsive-search-area">
-                <div class="form-group responsive-search-box">
-                    <label for="whatInputRes">What</label>
-                    <input type="text" class="form-control what-input-respsv" id="whatInputRes" placeholder="Ex: shopping and restaurant...">
+                <div class="col-xl-2 col-lg-2 col-md-6 col-sm-5">
+                    <div class="Discover footer-list">
+                        <p>Discover</p>
+                        <ul>
+                            <li>Chicago</li>
+                            <li>Los Angeles</li>
+                            <li>Miami</li>
+                            <li>New Yourk</li>
+                            <li>Florida</li>
+                            <li>Boston</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="form-group responsive-search-box">
-                    <label for="whereInputRes" class="where-label">Where</label>
-                    <input type="text" class="form-control where-input-respsv" id="whereInputRes" placeholder="Your City">
-                    <span class="fa fa-search form-control-feedback"></span>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-7">
+                    <div class="company footer-list">
+                        <p>Newslatter</p>
+                        <p class="spam-text">We don't send spam so don't worry.</p>
+                        <form action="">
+                            <div class="form-row align-items-center">
+                                <div class="submit-btn">
+                                    <input type="text" placeholder="Enter your email" class="email-input">
+                                    <button type="submit" class="subscribe-btn">Subscribe</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-            </form>
-        </article>
+            </div>
+        </div>
+    </footer>
+    <section>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <p class="reserved-text">&copy; Guido-All rights reserved</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <p class="guido-logo">Guido</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="social-icon">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <!-- =========== Main Area ========== -->
-    <main>
-        <div class="container container-bg">
-            <!-- Service Items Section -->
-            <section>
-                <div class="services">
-                    <div class="row">
-                        <div class="col-xl-2 col-md-4 col-sm-6">
-                            <div class="service-item">
-                                <i class="fas fa-utensils"></i>
-                                <p>Restaurant</p>
-                            </div>
-                        </div>
-                        <div class="col-xl-2 col-md-4 col-sm-6">
-                            <div class="service-item">
-                                <i class="fas fa-utensils"></i>
-                                <p>Restaurant</p>
-                            </div>
-                        </div>
-                        <div class="col-xl-2 col-md-4 col-sm-6">
-                            <div class="service-item">
-                                <i class="fas fa-utensils"></i>
-                                <p>Restaurant</p>
-                            </div>
-                        </div>
-                        <div class="col-xl-2 col-md-4 col-sm-6">
-                            <div class="service-item">
-                                <i class="fas fa-utensils"></i>
-                                <p>Restaurant</p>
-                            </div>
-                        </div>
-                        <div class="col-xl-2 col-md-4 col-sm-6">
-                            <div class="service-item">
-                                <i class="fas fa-utensils"></i>
-                                <p>Restaurant</p>
-                            </div>
-                        </div>
-                        <div class="col-xl-2 col-md-4 col-sm-6">
-                            <div class="service-item">
-                                <i class="fas fa-utensils"></i>
-                                <p>Restaurant</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Popular Things Section -->
-            <section class="popular-things" id="popularThings">
-                <h3>The Most Popular Things to Do in the City</h3>
-                <p>Discover some of the most popular listings in Toronto based on user reviews and ratings.</p>
-                    <div class="popular-things-area">
-                        <!-- <div class="row"> -->
-                            <!-- Popular things area carousel -->
-                            <div class="row pa-margintop">
-                                <div class="dot-list owl-carousel">
-                                    <!-- popular-things-one -->
-                                    <div class="col-xl-12 col-md-12 col-sm-12 col-xs-12">
-                                        <div class="popular-things-items">
-                                            <!-- Image -->
-                                            <div class="popular-things-image">
-                                                <img src="img/popular/1.jpg" alt="blog-img">
-                                                <div class="popular-things-tag">
-                                                    <a href="#" class="open">$$$$$</a>
-                                                    <a href="#" class="open">Open</a>
-                                                </div>
-                                                    <div class="featured-btn">
-                                                        <a href="#" class="featured">Featured</a>
-                                                    </div>
-                                                <div class="rieviews">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <p>(5 reviews)</p>
-                                                </div> 
-                                                
-                                            </div>
-                                            <!-- popular-things-content -->
-                                            <div class="popular-things-content">
-                                                <div class="site-icons">
-                                                    <i class="fab fa-servicestack"></i>
-                                                </div>
-                                                <div class="popular-things-heading">
-                                                    <h4><a href="#">Adventure High Ropes</a></h4>
-                                                </div>
-                                                <p class="pera-text">Lorem ipsum dolor mauris lectus,a ultricies nisi faucibus nec.elementum faucibus nec.</p>
-                                                <div class="phone-address">
-                                                    <p><i class="fa fa-phone" aria-hidden="true"></i> +61-8181-123</p>
-                                                    <p><i class="fas fa-map-marker-alt location-icon"></i> New York</p>
-                                                </div>
-                                                
-                                            </div>
-                                            <div class="popular-things-footer">
-                                                <p><i class="fab fa-servicestack"></i> Outdoor Activities</p>
-                                                <i class="far fa-heart activities-icon-two"></i>
-                                                <i class="fas fa-search-plus activities-icon-one"></i>
-                                            
-                                            </div>
-                                        </div>
-                                    </div>
-                                                <!-- popular-things-one -->
-                                                <div class="col-xl-12 col-md-12 col-sm-12 col-xs-12">
-                                                    <div class="popular-things-items">
-                                                        <!-- Image -->
-                                                        <div class="popular-things-image">
-                                                            <img src="img/popular/1.jpg" alt="blog-img">
-                                                            <div class="popular-things-tag">
-                                                                <a href="#" class="open">$$$$$</a>
-                                                                <a href="#" class="open">Open</a>
-                                                            </div>
-                                                            
-                                                            <div class="rieviews">
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="fas fa-star"></i>
-                                                                <p>(5 reviews)</p>
-                                                            </div>
-                                                
-                                                        </div>
-                                                        <!-- popular-things-content -->
-                                                        <div class="popular-things-content">
-                                                            <div class="site-icons">
-                                                                <i class="fab fa-servicestack"></i>
-                                                            </div>
-                                                            <div class="popular-things-heading">
-                                                                <h4><a href="#">Adventure High Ropes</a></h4>
-                                                            </div>
-                                                            <p class="pera-text">Lorem ipsum dolor mauris lectus,a ultricies nisi faucibus nec.elementum faucibus nec.
-                                                            </p>
-                                                            <div class="phone-address">
-                                                                <p><i class="fa fa-phone" aria-hidden="true"></i> +61-8181-123</p>
-                                                                <p><i class="fas fa-map-marker-alt location-icon"></i> New York</p>
-                                                            </div>
-                                                            
-                                                        </div>
-                                                        <div class="popular-things-footer">
-                                                            <p><i class="fab fa-servicestack"></i> Outdoor Activities</p>
-                                                            <i class="far fa-heart activities-icon-two"></i>
-                                                            <i class="fas fa-search-plus activities-icon-one"></i>
-                                                        
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                            <!-- popular-things-one -->
-                                                            <div class="col-xl-12 col-md-12 col-sm-12 col-xs-12">
-                                                                <div class="popular-things-items">
-                                                                    <!-- Image -->
-                                                                    <div class="popular-things-image">
-                                                                        <img src="img/popular/1.jpg" alt="blog-img">
-                                                                        <div class="popular-things-tag">
-                                                                            <a href="#" class="open">$$$$$</a>
-                                                                            <a href="#" class="open">Open</a>
-                                                                        </div>
-                                                    
-                                                                        <div class="rieviews">
-                                                                            <i class="fas fa-star"></i>
-                                                                            <i class="fas fa-star"></i>
-                                                                            <i class="fas fa-star"></i>
-                                                                            <i class="fas fa-star"></i>
-                                                                            <i class="fas fa-star"></i>
-                                                                            <p>(5 reviews)</p>
-                                                                        </div>
-                                                            
-                                                                    </div>
-                                                                    <!-- popular-things-content -->
-                                                                    <div class="popular-things-content">
-                                                                        <div class="site-icons">
-                                                                            <i class="fab fa-servicestack"></i>
-                                                                        </div>
-                                                                        <div class="popular-things-heading">
-                                                                            <h4><a href="#">Adventure High Ropes</a></h4>
-                                                                        </div>
-                                                                        <p class="pera-text">Lorem ipsum dolor mauris lectus,a ultricies nisi faucibus nec.elementum faucibus nec.
-                                                                        </p>
-                                                                        <div class="phone-address">
-                                                                            <p><i class="fa fa-phone" aria-hidden="true"></i> +61-8181-123</p>
-                                                                            <p><i class="fas fa-map-marker-alt location-icon"></i> New York</p>
-                                                                        </div>
-                                                                        
-                                                                    </div>
-                                                                    <div class="popular-things-footer">
-                                                                        <p><i class="fab fa-servicestack"></i> Outdoor Activities</p>
-                                                                        <i class="far fa-heart activities-icon-two"></i>
-                                                                        <i class="fas fa-search-plus activities-icon-one"></i>
-                                                                    
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                                        <!-- popular-things-one -->
-                                                                        <div class="col-xl-12 col-md-12 col-sm-12 col-xs-12">
-                                                                            <div class="popular-things-items">
-                                                                                <!-- Image -->
-                                                                                <div class="popular-things-image">
-                                                                                    <img src="img/popular/1.jpg" alt="blog-img">
-                                                                                    <div class="popular-things-tag">
-                                                                                        <a href="#" class="open">$$$$$</a>
-                                                                                        <a href="#" class="open">Open</a>
-                                                                                    </div>
-                                                                                    <div class="featured-btn">
-                                                                                        <a href="#" class="featured">Featured</a>
-                                                                                    </div>
-                                                                                    <div class="rieviews">
-                                                                                        <i class="fas fa-star"></i>
-                                                                                        <i class="fas fa-star"></i>
-                                                                                        <i class="fas fa-star"></i>
-                                                                                        <i class="fas fa-star"></i>
-                                                                                        <i class="fas fa-star"></i>
-                                                                                        <p>(5 reviews)</p>
-                                                                                    </div>
-                                                                        
-                                                                                </div>
-                                                                                <!-- popular-things-content -->
-                                                                                <div class="popular-things-content">
-                                                                                    <div class="site-icons">
-                                                                                        <i class="fab fa-servicestack"></i>
-                                                                                    </div>
-                                                                                    <div class="popular-things-heading">
-                                                                                        <h4><a href="#">Adventure High Ropes</a></h4>
-                                                                                    </div>
-                                                                                    <p class="pera-text">Lorem ipsum dolor mauris lectus,a ultricies nisi faucibus nec.elementum faucibus nec.
-                                                                                    </p>
-                                                                                    <div class="phone-address">
-                                                                                        <p><i class="fa fa-phone" aria-hidden="true"></i> +61-8181-123</p>
-                                                                                        <p><i class="fas fa-map-marker-alt location-icon"></i> New York</p>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="popular-things-footer">
-                                                                                    <p><i class="fab fa-servicestack"></i> Outdoor Activities</p>
-                                                                                    <i class="far fa-heart activities-icon-two"></i>
-                                                                                    <i class="fas fa-search-plus activities-icon-one"></i>
-                                                                                
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                                    <!-- popular-things-one -->
-                                                                                    <div class="col-xl-12 col-md-12 col-sm-12 col-xs-12">
-                                                                                        <div class="popular-things-items">
-                                                                                            <!-- Image -->
-                                                                                            <div class="popular-things-image">
-                                                                                                <img src="img/popular/1.jpg" alt="blog-img">
-                                                                                                <div class="popular-things-tag">
-                                                                                                    <a href="#" class="open">$$$$$</a>
-                                                                                                    <a href="#" class="open">Open</a>
-                                                                                                </div>
-                                                                                                
-                                                                                                <div class="rieviews">
-                                                                                                    <i class="fas fa-star"></i>
-                                                                                                    <i class="fas fa-star"></i>
-                                                                                                    <i class="fas fa-star"></i>
-                                                                                                    <i class="fas fa-star"></i>
-                                                                                                    <i class="fas fa-star"></i>
-                                                                                                    <p>(5 reviews)</p>
-                                                                                                </div>
-                                                                                    
-                                                                                            </div>
-                                                                                            <!-- popular-things-content -->
-                                                                                            <div class="popular-things-content">
-                                                                                                <div class="site-icons">
-                                                                                                    <i class="fab fa-servicestack"></i>
-                                                                                                </div>
-                                                                                                <div class="popular-things-heading">
-                                                                                                    <h4><a href="#">Adventure High Ropes</a></h4>
-                                                                                                </div>
-                                                                                                <p class="pera-text">Lorem ipsum dolor mauris lectus,a ultricies nisi faucibus nec.elementum faucibus nec.
-                                                                                                </p>
-                                                                                                <div class="phone-address">
-                                                                                                    <p><i class="fa fa-phone" aria-hidden="true"></i> +61-8181-123</p>
-                                                                                                    <p><i class="fas fa-map-marker-alt location-icon"></i> New York</p>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                            <div class="popular-things-footer">
-                                                                                                <p><i class="fab fa-servicestack"></i> Outdoor Activities</p>
-                                                                                                <i class="far fa-heart activities-icon-two"></i>
-                                                                                                <i class="fas fa-search-plus activities-icon-one"></i>
-                                                                                            
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                                <!-- popular-things-one -->
-                                                                                                <div class="col-xl-12 col-md-12 col-sm-12 col-xs-12">
-                                                                                                    <div class="popular-things-items">
-                                                                                                        <!-- Image -->
-                                                                                                        <div class="popular-things-image">
-                                                                                                            <img src="img/popular/1.jpg" alt="blog-img">
-                                                                                                            <div class="popular-things-tag">
-                                                                                                                <a href="#" class="open">$$$$$</a>
-                                                                                                                <a href="#" class="open">Open</a>
-                                                                                                            </div>
-                                                                                                            
-                                                                                                            <div class="rieviews">
-                                                                                                                <i class="fas fa-star"></i>
-                                                                                                                <i class="fas fa-star"></i>
-                                                                                                                <i class="fas fa-star"></i>
-                                                                                                                <i class="fas fa-star"></i>
-                                                                                                                <i class="fas fa-star"></i>
-                                                                                                                <p>(5 reviews)</p>
-                                                                                                            </div>
-                                                                                                
-                                                                                                        </div>
-                                                                                                        <!-- popular-things-content -->
-                                                                                                        <div class="popular-things-content">
-                                                                                                            <div class="site-icons">
-                                                                                                                <i class="fab fa-servicestack"></i>
-                                                                                                            </div>
-                                                                                                            <div class="popular-things-heading">
-                                                                                                                <h4><a href="#">Adventure High Ropes</a></h4>
-                                                                                                            </div>
-                                                                                                            <p class="pera-text">Lorem ipsum dolor mauris lectus,a ultricies nisi faucibus nec.elementum faucibus nec.
-                                                                                                            </p>
-                                                                                                            <div class="phone-address">
-                                                                                                                <p><i class="fa fa-phone" aria-hidden="true"></i> +61-8181-123</p>
-                                                                                                                <p><i class="fas fa-map-marker-alt location-icon"></i> New York</p>
-                                                                                                            </div>
-                                                                                                            
-                                                                                                        </div>
-                                                                                                        <div class="popular-things-footer">
-                                                                                                            <p><i class="fab fa-servicestack"></i> Outdoor Activities</p>
-                                                                                                            <i class="far fa-heart activities-icon-two"></i>
-                                                                                                            <i class="fas fa-search-plus activities-icon-one"></i>
-                                                                                                            
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </div>
-                                    
-                                </div>
-                            </div>
-                        <!-- </div> -->
-             </section>
-            <!-- Trending Cities Section -->
-             <section class="trending-cities">
-                 <h3>Trending Cities</h3>
-                 <p>Cities You Must Explore This Summer</p>
-                 <div class="trending-cities-img">
-                     <div class="row pb-4">
-                         <div class="col-xl-8 col-md-6 col-xs-12">
-                             <div class="miami-img-one">
-                                 <img src="img/trending/v.jpg" alt="trending-img-one">
-                                 <div class="miami-content">
-                                    <h4>Miami</h4>
-                                    <p>62 Listings</p>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="col-xl-4 col-md-6 col-xs-12">
-                            <div class="miami-img-two">
-                                <img src="img/trending/o.jpg" alt="trending-image-two" >
-                                <div class="miami-content">
-                                    <h4>Miami</h4>
-                                    <p>62 Listings</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="trending-cities-img">
-                    <div class="row">
-                        <div class="col-xl-4 col-md-6 col-xs-12">
-                            <div class="miami-img-two responsive-pdng">
-                                <img src="img/trending/o.jpg" alt="trending-image-three">
-                                <div class="miami-content">
-                                    <h4>Miami</h4>
-                                    <p>62 Listings</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-8 col-md-6 col-xs-12">
-                            <div class="miami-img-one">
-                                <img src="img/trending/v.jpg" alt="trending-image-four">
-                                <div class="miami-content">
-                                    <h4>Miami</h4>
-                                    <p>62 Listings</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-             </section>
-        </div>
-        <div class="container-fluid content-fluid-area">
-            <!--How it Works Section -->
-            <section class="how-it-work-section">
-              <div class="container">
-                <h3>How it Works</h3>
-                <p>Bringing Business and community members together</p>
-                <div class="features-box">
-                <div class="row">
-                    <!-- single-features -->
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-duration="1200"
-                        data-aos-easing="ease-in-sine" data-aos-anchor-placement="top-bottom">
-                        <div class="single-features">
-                            <i class="fas fa-chart-pie"></i>
-                            <h4>Find Business</h4>
-                            <p>Lorem ipsum dolor mauris lectus,a ultricies nisi
-                                faucibus nec elementum quam. mauris lectus,
-                                a ultricies nisi faucibus nec a ultricies nisi
-                                faucibus nec elementum.</p>
-                        </div>
-                    </div>
-                    <!-- single-features -->
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-duration="1200"
-                        data-aos-easing="ease-in-sine" data-aos-anchor-placement="top-bottom">
-                        <div class="single-features">
-                            <i class="fas fa-backspace"></i>
-                            <h4>Find Business</h4>
-                            <p>Lorem ipsum dolor mauris lectus,a ultricies nisi
-                                faucibus nec elementum quam. mauris lectus,
-                                a ultricies nisi faucibus nec a ultricies nisi
-                                faucibus nec elementum.</p>
-                        </div>
-                    </div>
-                    <!-- single-features -->
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-duration="1200"
-                        data-aos-easing="ease-in-sine" data-aos-anchor-placement="top-bottom">
-                        <div class="single-features">
-                            <i class="fa fa-desktop"></i>
-                            <h4>Find Business</h4>
-                            <p>Lorem ipsum dolor mauris lectus,a ultricies nisi
-                                faucibus nec elementum quam. mauris lectus,
-                                a ultricies nisi faucibus nec a ultricies nisi
-                                faucibus nec elementum.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-         </div>
-        </section>
-        </div>
-
-        <!-- =====================Testimonia Area=================== -->
-        <section id="testimonial">
-            <div class="client-testimonial">
-                <div class="container">
-                    <h3>Testimonials From Our Customers</h3>
-                    <p>Lorem ipsum dolor mauris lectus,a ultricies</p>
-                    <div class="row">
-                        <div class="dot-list owl-carousel">
-                            <!-- single-features -->
-                            <div class="col-xl-12 col-md-12 col-sm-12 col-xs-12">
-                                <div class="single-testimonial">
-                                    <div class="client-img">
-                                        <img src="img/clients/1.jpg" alt="clnts-img-one">
-                                    </div>
-                                    <div class="testimonial-content">
-                                        <h5>Albert Cole</h5>
-                                        <h6>CEO of abc news</h6>
-                                        <p>“Lorem ipsum dolor mauris lectus,a ultricies nisi faucibus nec.elementum quam. mauris
-                                            lectus, a ultricies nisi faucibus nec.”</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- single-features -->
-                            <div class="col-xl-12 col-md-12 col-sm-12 col-xs-12">
-                                <div class="single-testimonial">
-                                    <div class="client-img">
-                                        <img src="img/clients/2.jpg" alt="clnts-img-one">
-                                    </div>
-                                    <div class="testimonial-content">
-                                        <h5>Alison Down</h5>
-                                        <h6>CEO of abc news</h6>
-                                        <p>“Lorem ipsum dolor mauris lectus,a ultricies nisi faucibus nec.elementum quam. mauris
-                                            lectus, a ultricies nisi faucibus nec.”</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- single-features -->
-                            <div class="col-xl-12 col-md-12 col-sm-12 col-xs-12">
-                                <div class="single-testimonial">
-                                    <div class="client-img">
-                                        <img src="img/clients/3.jpg" alt="clnts-img-one">
-                                    </div>
-                                    <div class="testimonial-content">
-                                        <h5>Daniel Parker</h5>
-                                        <h6>CEO of abc news</h6>
-                                        <p>“Lorem ipsum dolor mauris lectus,a ultricies nisi faucibus nec.elementum quam. mauris
-                                            lectus, a ultricies nisi faucibus nec.”</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- single-features -->
-                            <div class="col-xl-12 col-md-12 col-sm-12 col-xs-12">
-                                <div class="single-testimonial">
-                                    <div class="client-img">
-                                        <img src="img/clients/1.jpg" alt="clnts-img-one">
-                                    </div>
-                                    <div class="testimonial-content">
-                                        <h5>john <span>doe</span></h5>
-                                        <h6>CEO of abc news</h6>
-                                        <p>“Lorem ipsum dolor mauris lectus,a ultricies nisi faucibus nec.elementum quam. mauris
-                                            lectus, a ultricies nisi faucibus nec.”</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--- ===================== Business Exposure Area ==================== -->
-        <section class="resturant-img w-100 d-flex justify-content-center align-items-center">
-            <article class="resturant-img-content text-center">
-                <h2>Get Business Exposure</h2>
-                <h3>Your business deserves efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas.</h3>
-                <a href="" class="works-btn">How It Works</a>
-            </article>
-        </section>
-        <section class="news-tips">
-            <div class="container">
-            <h3>News & Tips</h3>
-            <p>Checkout Latest News And Articles From Our Blog</p>
-          
-                <!-- Popular things area carousel -->
-                <div class="row pa-margintop">
-                 
-                        <!-- popular-things-one -->
-                        <div class="col-xl-4 col-md-4 col-xs-12">
-                            <div class="news-tips-items">
-                                <!-- Image -->
-                                <div class="news-tips-image">
-                                    <img src="img/popular/1.jpg" alt="blog-img">
-                                    <div class="news-tips-tag">
-                                        <a href="#" class="featured">Health & Care</a>
-                                    </div>
-                                </div>
-                                <!-- popular-things-content -->
-                                <div class="news-tips-content">
-                                    <div class="phone-address">
-                                        <p><i class="fas fa-user"></i> Jack Wilson</p>
-                                        <p><i class="far fa-calendar calender-icon"></i> 06 April, 2020</p>
-                                    </div>
-                                    <div class="news-tips-heading">
-                                        <h4>The Top 25 Bike Stores in Toronto by Neighbourhood</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- popular-things-one -->
-                            <div class="col-xl-4 col-md-4 col-xs-12">
-                                <div class="news-tips-items">
-                                    <!-- Image -->
-                                    <div class="news-tips-image">
-                                        <img src="img/popular/1.jpg" alt="blog-img">
-                                        <div class="news-tips-tag">
-                                            <a href="#" class="featured">Culture</a>
-                                        </div>
-                                    </div>
-                                    <!-- popular-things-content -->
-                                    <div class="news-tips-content">
-                                        <div class="phone-address">
-                                            <p><i class="fas fa-user"></i> Jack Wilson</p>
-                                            <p><i class="far fa-calendar calender-icon"></i> 06 April, 2020</p>
-                                        </div>
-                                        <div class="news-tips-heading">
-                                            <h4>The Top 25 Bike Stores in Toronto by Neighbourhood</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        <!-- popular-things-one -->
-                        <div class="col-xl-4 col-md-4 col-xs-12">
-                            <div class="news-tips-items">
-                                <!-- Image -->
-                                <div class="news-tips-image">
-                                    <img src="img/popular/1.jpg" alt="blog-img">
-                                    <div class="news-tips-tag">
-                                        <a href="#" class="featured">Travelling</a>
-                                    </div>
-                                </div>
-                                <!-- popular-things-content -->
-                                <div class="news-tips-content">
-                                    <div class="phone-address">
-                                        <p><i class="fas fa-user"></i> Jack Wilson</p>
-                                        <p><i class="far fa-calendar calender-icon"></i> 06 April, 2020</p>
-                                    </div>
-                                    <div class="news-tips-heading">
-                                        <h4>The Top 25 Bike Stores in Toronto by Neighbourhood</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </section>
-
-        <!-- =============== Submit Property Section ================ -->
-        <section class="call-to-action">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-8 col-md-8 col-sm-12">
-                        <div class="property-text">
-                            <h4>Submit Your Property Today!</h4>
-                            <p>Explore some of the best tips from around the city from our partners and friends.</p>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-4 col-sm-12">
-                        <div class="action-btn">
-                            <button type="submit" class="submit-btn">Submit Now</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>   
-        <footer class="footer-bg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-3 col-md-3 col-sm-6">
-                        <div class="contact-us">
-                            <p>Contact Us</p>
-                            <ul>
-                                <li><i class="fas fa-map-marker-alt"></i>329 Queensbery street, North Melbourne VIC 3051, Australia</li>
-                                <li><i class="fas fa-phone"></i>123 568 258</li>
-                                <li><i class="fas fa-envelope"></i>support@skola.com</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-md-3 col-sm-6">
-                        <div class="company footer-list">
-                            <p>Company</p>
-                            <ul>
-                                <li>Help Center</li>
-                                <li>About</li>
-                                <li>Careers</li>
-                                <li>How it Works</li>
-                                <li>Articles and Tips</li>
-                                <li>Torms of service</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-md-2 col-sm-6">
-                        <div class="Discover footer-list">
-                            <p>Discover</p>
-                            <ul>
-                                <li>Chicago</li>
-                                <li>Los Angeles</li>
-                                <li>Miami</li>
-                                <li>New Yourk</li>
-                                <li>Florida</li>
-                                <li>Boston</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-4 col-sm-6">
-                        <div class="company footer-list">
-                            <p>Newslatter</p>
-                            <p class="spam-text">We don't send spam so don't worry.</p>
-                           <form action="">
-                               <div class="form-row align-items-center">
-                                    <div class="submit-btn">
-                                        <input type="text" placeholder="Enter your email" class="email-input">
-                                        <button type="submit" class="subscribe-btn">Subscribe</button>
-                                    </div>
-                               </div>
-                           </form>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </footer>
-        <section>
-            <div class="footer-bottom">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-4 col-md-4 col-sm-12">
-                            &copy; Guido-All rights reserved
-                        </div>
-                        <div class="col-xl-4 col-md-4 col-sm-12 text-center">
-                            Guido
-                        </div>
-                        <div class="col-xl-4 col-md-4 col-sm-12">
-                            <div class="social-icon">
-                                <ul>
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="plugins/bootstrap-5/js/bootstrap.min.js"></script>
-    <script src="plugins/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
-    <script src="plugins/popper-1.16/popper.min.js"></script>
-    <script src="plugins/scrollup/jquery.scrollUp.js"></script>
-    <script src="js/main.js"></script>
-    
-    <script>
-        // function isElementVisible($elementToBeChecked) {
-        //         const TopView = $(window).scrollTop();
-        //         const BotView = TopView + $(window).height();
-        //         const TopElement = $elementToBeChecked.offset().top;
-        //         const BotElement = TopElement + $elementToBeChecked.height();
-        //         return ((BotElement <= BotView) && (TopElement >= TopView));
-        //     }
-    </script>
-    
+</main>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="plugins/bootstrap-5/js/bootstrap.min.js"></script>
+<script src="plugins/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
+<script src="plugins/popper-1.16/popper.min.js"></script>
+<script src="plugins/scrollup/jquery.scrollUp.js"></script>
+<script src="js/main.js"></script>
+<script>
+    // function isElementVisible($elementToBeChecked) {
+    //         const TopView = $(window).scrollTop();
+    //         const BotView = TopView + $(window).height();
+    //         const TopElement = $elementToBeChecked.offset().top;
+    //         const BotElement = TopElement + $elementToBeChecked.height();
+    //         return ((BotElement <= BotView) && (TopElement >= TopView));
+    //     }
+</script>
 </body>
 </html>

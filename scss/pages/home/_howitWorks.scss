@@ -1,65 +1,62 @@
-.how-it-work-section{
-    margin-top: 70px;
-    padding: 50px 20px;
-    background-color: $contnt-bg-color;
+.how-it-work-section {
+  margin-top: 70px;
+  padding: 50px 20px;
+  background-color: $contnt-bg-color;
 
- h3{
-        text-align: center;
-        font-size: 25px;
-        font-weight: 600;
-        color: $black;
-        line-height: 31px;
-        padding-bottom: 10px;
-    }
-    p{
-        text-align: center;
-        font-size: 14px;
-        font-weight: 400;
-        color: $light-gray;
-        padding-bottom: 30px;
-    }
-    .single-features{
-        text-align: center;
-        -webkit-box-shadow: -6px 10px 40px rgba(234, 229, 244, 0.7);
-        box-shadow: -6px 10px 40px rgba(234, 229, 244, 0.7);
-        text-align: center;
-        padding: 40px 20px;
-        @include transition(.5s);
-        background-color: #fff;
-        position: relative;
-        overflow: hidden;
-        margin-bottom: 30px;
-        border-radius: 10px;
+  h3 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: $black;
+    line-height: 31px;
+    padding-bottom: 10px;
+  }
+  p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: $light-gray;
+    padding-bottom: 30px;
+  }
+  .single-features {
+    text-align: center;
+    -webkit-box-shadow: -6px 10px 40px rgba(234, 229, 244, 0.7);
+    box-shadow: -6px 10px 40px rgba(234, 229, 244, 0.7);
+    text-align: center;
+    padding: 40px 20px;
+    @include transition(0.5s);
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    border-radius: 10px;
 
-    i{
-        height: 120px;
-        width: 120px;
-        background: $contnt-bg-color;
-        border-radius: 50%;
-        font-size: 30px;
-        color: $brand-color;
-        line-height: 120px;
-        margin-bottom: 30px;
-        // padding-top: 25px;
-        transition: all 0.3s ease;
-        &:hover{
-             background: $brand-color;
-             color: $white;
-        }
+    i {
+      height: 120px;
+      width: 120px;
+      background: $contnt-bg-color;
+      border-radius: 50%;
+      font-size: 30px;
+      color: $brand-color;
+      line-height: 120px;
+      margin-bottom: 30px;
+      // padding-top: 25px;
+      transition: all 0.3s ease;
+      &:hover {
+        background: $brand-color;
+        color: $white;
+      }
     }
-    h4{
-        color: $black;
-        font-size: 19px;
-        font-weight: 700;
-        margin-bottom: 15px;
-
+    h4 {
+      color: $black;
+      font-size: 19px;
+      font-weight: 700;
+      margin-bottom: 15px;
     }
-    p{
-        font-size: 15.5px;
-        line-height: 27px;
-        padding-bottom: 0; 
+    p {
+      font-size: 15.5px;
+      line-height: 27px;
+      padding-bottom: 0;
     }
-
-    }
+  }
 }
-

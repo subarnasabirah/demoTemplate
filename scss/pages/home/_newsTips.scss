@@ -1,5 +1,5 @@
-.news-tips{
-    h3{
+.news-tips {
+    h3 {
         text-align: center;
         font-size: 25px;
         font-weight: 600;
@@ -7,37 +7,37 @@
         line-height: 20px;
         padding: 70px 0 10px 0;
     }
-    p{
+    p {
         text-align: center;
         font-size: 14px;
         font-weight: 400;
         color: $light-gray;
         padding-bottom: 30px;
     }
-    .news-tips-items{
-        @include media('sm') {
+    .news-tips-items {
+        @include media("sm") {
             margin-bottom: 20px;
         }
         overflow: hidden;
-        border: 2px solid #EEEEFE;
+        border: 2px solid #eeeefe;
         border-radius: 10px;
-        .news-tips-image{
+        .news-tips-image {
             position: relative;
-            img{
+            img {
                 display: block;
                 width: 100%;
                 padding: 8px;
                 border-radius: 20px;
             }
-            
-            .news-tips-tag{
-                @include media('md') {
+
+            .news-tips-tag {
+                @include media("md") {
                     left: 20px;
                 }
                 position: absolute;
                 top: 40px;
                 left: 25px;
-                .featured{
+                .featured {
                     text-decoration: none;
                     color: $white;
                     padding: 8px 18px;
@@ -46,15 +46,14 @@
                     margin-right: 8px;
                 }
             }
+        }
 
-        }  
-
-        .news-tips-content{
-            .news-tips-heading{
-                h4{
-                    @include media('md') {
-                       font-size: 14px;
-                       padding-left: 8px;
+        .news-tips-content {
+            .news-tips-heading {
+                h4 {
+                    @include media("md") {
+                        font-size: 14px;
+                        padding-left: 8px;
                     }
                     font-size: 18px;
                     color: $black;
@@ -62,42 +61,38 @@
                     text-decoration: none;
                     padding-left: 20px;
                     line-height: 31px;
-                }  
+                }
             }
-            
-            .phone-address{
-                @include media('md') {
+
+            .phone-address {
+                @include media("md") {
                     padding-left: 8px;
                 }
                 display: flex;
                 padding-left: 20px;
                 padding-top: 10px;
-                p{
-                    @include media('md') {
-                       font-size: 11px;
+                p {
+                    @include media("md") {
+                        font-size: 11px;
                     }
                     color: $light-gray;
                     padding-bottom: 0;
                     margin-bottom: 5px;
                     font-size: 14px;
-                   
-                    i{
+
+                    i {
                         margin-right: 10px;
                         color: $light-gray;
                     }
-                    .calender-icon{
-                        @include media('md') {
+                    .calender-icon {
+                        @include media("md") {
                             margin-left: 15px;
                         }
-                        
+
                         margin-left: 25px;
                     }
                 }
-
             }
-                     
         }
-
     }
-
 }

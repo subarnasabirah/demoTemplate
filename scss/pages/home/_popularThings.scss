@@ -1,5 +1,5 @@
-.popular-things{
-    h3{
+.popular-things {
+    h3 {
         text-align: center;
         font-size: 25px;
         font-weight: 600;
@@ -7,80 +7,74 @@
         line-height: 20px;
         padding: 50px 0 10px 0;
     }
-    p{
+    p {
         text-align: center;
         font-size: 14px;
         font-weight: 400;
         color: $light-gray;
         padding-bottom: 30px;
     }
-    .popular-things-items{
+    .popular-things-items {
         position: relative;
         overflow: hidden;
-        border: 2px solid #EEEEFE;
+        border: 2px solid #eeeefe;
         border-radius: 10px;
-        .popular-things-image{
+        .popular-things-image {
             position: relative;
             overflow: hidden;
-            img{
+            img {
                 display: block;
                 padding: 8px;
                 border-radius: 20px;
                 opacity: 0.8;
             }
         }
-            
-            .popular-things-tag{
-                   position: absolute;
-                   top: 30px;
-                   left: 25px;
-                .open{
-                    text-decoration: none;
-                    color: $white;
-                    padding: 8px 14px;
-                    border: 1px solid $white;
-                    border-radius: 10px;
-                    margin-right: 8px; 
-                }
+
+        .popular-things-tag {
+            position: absolute;
+            top: 30px;
+            left: 25px;
+            .open {
+                text-decoration: none;
+                color: $white;
+                padding: 8px 14px;
+                border: 1px solid $white;
+                border-radius: 10px;
+                margin-right: 8px;
             }
-                .featured{
-                    text-decoration: none;
-                    color: $white;
-                    padding: 8px 14px;
-                    background: #ED4949;
-                    border-radius: 8px;
-                    font-size: 14px;
-                    position: absolute;
-                    right: 25px;
-                    top: 22px;
+        }
+        .featured {
+            text-decoration: none;
+            color: $white;
+            padding: 8px 14px;
+            background: #ed4949;
+            border-radius: 8px;
+            font-size: 14px;
+            position: absolute;
+            right: 25px;
+            top: 22px;
+        }
+        .rieviews {
+            display: flex;
+            position: absolute;
+            bottom: -25px;
+            left: 20px;
+            i {
+                margin-right: 5px;
+                color: $white;
+                font-size: 14px;
+            }
+            p {
+                margin-left: 5px;
+                color: $white;
+                font-size: 14px;
+            }
+        }
 
-                }
-                .rieviews{
-                    display: flex;
-                    position: absolute;
-                    bottom: -25px;
-                    left: 20px;
-                    i{
-                        margin-right: 5px;
-                        color: $white;
-                        font-size: 14px;
-                    }
-                    p{
-                        margin-left: 5px;
-                        color: $white;
-                        font-size: 14px;
-                    }
-                } 
-                
-            
-            
-
-        
-
-        .popular-things-content{
+        .popular-things-content {
             padding: 20px;
             position: relative;
-            .site-icons{
+            .site-icons {
                 position: absolute;
                 top: -35px;
                 right: 30px;
@@ -94,19 +88,18 @@
                 border: 2px solid $white;
                 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
             }
-            .popular-things-heading{
-                h4 a{
-                     @include media('lg') {
+            .popular-things-heading {
+                h4 a {
+                    @include media("lg") {
                         font-size: 16px;
                     }
                     font-size: 18px;
                     color: $black;
                     font-weight: 700;
                     text-decoration: none;
-                    
-                }  
+                }
             }
-            .pera-text{
+            .pera-text {
                 color: $light-gray;
                 font-size: 14px;
                 overflow: hidden;
@@ -114,75 +107,63 @@
                 text-overflow: ellipsis;
                 text-align: left;
                 padding-bottom: 0;
-              
             }
-            .phone-address{
+            .phone-address {
                 display: flex;
-                
-                p{
+
+                p {
                     color: $black;
                     padding-bottom: 0;
-                   
-                    i{
+
+                    i {
                         margin-right: 10px;
                         color: $light-gray;
                     }
-                    .location-icon{
+                    .location-icon {
                         margin-left: 25px;
                     }
                 }
-
             }
-           
-            
-                    
         }
-         .popular-things-footer{
-                border-top: 2px solid #EEEEFE;
-                display: block;
-                padding: 0 20px;
-                p{
-                    color: $black;
-                    margin-top: 20px;
-                    padding-bottom: 0;
-                    text-align: left;
-                   
-                    float: left;
-                    i{
-                        background: #DD9934;
-                        height: 30px;
-                        width: 30px;
-                        border-radius: 50%;
-                        padding-top: 7px;
-                        margin-right: 5px;
-                        color: $white;
-                        text-align: center;
-                    }
+        .popular-things-footer {
+            border-top: 2px solid #eeeefe;
+            display: block;
+            padding: 0 20px;
+            p {
+                color: $black;
+                margin-top: 20px;
+                padding-bottom: 0;
+                text-align: left;
 
-                }
-                .activities-icon-one{
-                    float: right;
-                    color: $light-gray;
-                    margin-top: 30px;
-                    font-size: 16px;
-                    
-                }
-                .activities-icon-two{
-                    float: right;
-                    color: #A1A1A1;
+                float: left;
+                i {
+                    background: #dd9934;
                     height: 30px;
                     width: 30px;
                     border-radius: 50%;
-                    background: #EEEEFE;
-                    margin: 20px 0 0 25px;
-                    padding: 8px;
-                    font-size: 16px;
+                    padding-top: 7px;
+                    margin-right: 5px;
+                    color: $white;
+                    text-align: center;
                 }
-
             }
-       
-        
-
+            .activities-icon-one {
+                float: right;
+                color: $light-gray;
+                margin-top: 30px;
+                font-size: 16px;
+            }
+            .activities-icon-two {
+                float: right;
+                color: #a1a1a1;
+                height: 30px;
+                width: 30px;
+                border-radius: 50%;
+                background: #eeeefe;
+                margin: 20px 0 0 25px;
+                padding: 8px;
+                font-size: 16px;
+            }
+        }
     }
-
 }

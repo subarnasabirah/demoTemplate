@@ -1,48 +1,48 @@
-.footer-bg{
-    background-color: #1D293F;
+.footer-bg {
+    background-color: #1d293f;
     color: $white;
     padding: 70px 0;
-    .contact-us{
-        p{
+    .contact-us {
+        p {
             color: $white;
             font-size: 18px;
         }
-        ul{
-            li{
+        ul {
+            li {
                 padding-top: 10px;
                 font-size: 14px;
                 @include transition(0.75s ease);
-                &:hover{
+                &:hover {
                     padding-left: 10px;
                 }
-                i{
+                i {
                     padding-right: 10px;
                 }
             }
         }
     }
-    .footer-list{
-         p{
+    .footer-list {
+        p {
             color: $white;
             font-size: 16px;
             padding-top: 10px;
         }
-        ul{
-            li{
+        ul {
+            li {
                 padding-top: 10px;
                 font-size: 14px;
                 @include transition(0.75s ease);
-                &:hover{
+                &:hover {
                     padding-left: 10px;
                 }
             }
         }
-        .spam-text{
+        .spam-text {
             font-size: 14px;
         }
-        .submit-btn{
+        .submit-btn {
             position: relative;
-            .email-input{
+            .email-input {
                 position: relative;
                 border: none;
                 padding: 12px 0 12px 15px;
@@ -51,16 +51,7 @@
                 max-width: 270px;
                 width: 100%;
             }
-            .subscribe-btn{
-                @include media('md') {
-                   left: 129px;
-                }
-                 @include media('sm') {
-                   left: 158px;
-                }
-                @include media('xs') {
-                   left: 186px;
-                }
+            .subscribe-btn {
                 position: absolute;
                 padding: 8px 12px;
                 border-radius: 5px;
@@ -72,48 +63,49 @@
                 font-size: 12px;
             }
         }
-        
-
     }
-    @include media('md') {
-        .company{
+    @include media("md") {
+        .company {
             margin-bottom: 30px;
         }
-        .contact-us{
-            margin-bottom: 30px;
-        }   
-                         
-    }
-    @include media('sm') {
-        .Discover{
+        .contact-us {
             margin-bottom: 30px;
         }
-
     }
-    
-    
-    
+    @include media("sm") {
+        .Discover {
+            margin-bottom: 30px;
+        }
+    }
 }
-.footer-bottom{
-    background-color: #1D293F;
+.footer-bottom {
+    background-color: #1d293f;
     color: $white;
-    border-top: 1px solid #2D374B;
+    border-top: 1px solid #2d374b;
     padding: 20px 0;
-    .social-icon{
+    .reserved-text {
+        @include media("sm") {
+            text-align: center;
+        }
+    }
+    .guido-logo {
+        text-align: center;
+    }
+    .social-icon {
         text-align: right;
-        ul{
-            li{
-                
+        @include media("sm") {
+            text-align: center;
+        }
+        ul {
+            li {
                 display: inline-block;
-                i{
-                    
+                i {
                     color: $white;
                     padding-right: 15px;
-                    &:hover{
+                    &:hover {
                         color: $brand-color;
                     }
                 }
-
             }
         }
     }
