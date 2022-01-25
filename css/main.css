@@ -114,13 +114,13 @@ header .navbar .navbar-nav li .dropdown li a:hover { color: #000; -webkit-transi
 
 header .navbar .navbar-nav li:hover .dropdown li { visibility: visible; -webkit-transition: 0.75s ease; -o-transition: 0.75s ease; transition: 0.75s ease; }
 
-header .navbar .navbar-nav li .listing-btn { background-color: #ffffff; padding: 8px 20px; color: #000; font-size: 14px; margin-left: 20px; }
+header .navbar .navbar-nav li .listing-btn { background-color: #ffffff; padding: 8px 20px; color: #000; font-size: 14px; margin-left: 20px; -webkit-transition: 0.75s ease; -o-transition: 0.75s ease; transition: 0.75s ease; }
 
 @media all and (max-width: 991px) { header .navbar .navbar-nav li .listing-btn { display: none; } }
 
 header .navbar .navbar-nav li .listing-btn i { margin-right: 5px; font-size: 12px; }
 
-header .navbar .navbar-nav li .listing-btn.scrolled { background-color: #234DD4; color: #ffffff; }
+header .navbar .navbar-nav li .listing-btn:hover { background-color: #234DD4; color: #ffffff; }
 
 .banner-img { position: relative; background-image: url("../img/banner-img.jpg"); background-size: cover; height: 100vh; z-index: -1; }
 

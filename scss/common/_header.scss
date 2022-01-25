@@ -154,11 +154,12 @@ header {
           color: $black;
           font-size: 14px;
           margin-left: 20px;
+          @include transition(0.75s ease);
           i {
             margin-right: 5px;
             font-size: 12px;
           }
-          &.scrolled {
+          &:hover {
             background-color: $brand-color;
             color: $white;
           }
