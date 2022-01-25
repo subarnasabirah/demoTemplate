@@ -122,7 +122,7 @@ header .navbar .navbar-nav li .listing-btn i { margin-right: 5px; font-size: 12p
 
 header .navbar .navbar-nav li .listing-btn:hover { background-color: #234DD4; color: #ffffff; }
 
-.banner-img { position: relative; background-image: url("../img/banner-img.jpg"); background-size: cover; height: 100vh; z-index: -1; }
+.banner-img { position: relative; background-image: url("../img/banner-img.jpg"); background-size: cover; height: 100vh; z-index: 1; }
 
 @media all and (max-width: 991px) { .banner-img { height: 80vh; } }
 
@@ -134,7 +134,7 @@ header .navbar .navbar-nav li .listing-btn:hover { background-color: #234DD4; co
 
 @media all and (max-width: 575px) { .banner-img::before { height: 75vh; } }
 
-.banner-img .banner-img-content { z-index: 1; padding: 0 30px; }
+.banner-img .banner-img-content { position: relative; z-index: 2; padding: 0 30px; }
 
 .banner-img .banner-img-content h1 { color: #ffffff; font-weight: 600; font-size: 40px; line-height: 35px; }
 
@@ -164,7 +164,7 @@ header .navbar .navbar-nav li .listing-btn:hover { background-color: #234DD4; co
 
 .banner-img .banner-img-content .responsive-search-area { display: none; }
 
-.banner-img .banner-img-content .responsive-search-area .responsive-search-box { background: #ffffff; padding: 5px 15px; margin: 15px 0; border-radius: 40px 40px; display: flex; position: relative; }
+.banner-img .banner-img-content .responsive-search-area .responsive-search-box { background: #ffffff; padding: 5px 15px; margin: 15px 0; border-radius: 40px 40px; display: flex; position: relative; z-index: 999; }
 
 .banner-img .banner-img-content .responsive-search-area .responsive-search-box label { font-size: 16px; font-weight: 400; padding: 8px 10px 0 20px; }
 
@@ -189,7 +189,7 @@ header.scrolled { background: #171a21 !important; padding: 10px 0; -webkit-trans
 
 .owl-carousel .owl-dots .owl-dot .owl-dots { text-align: center !important; margin-top: 30px; }
 
-.container-bg { margin-top: -60px; background: #ffffff; border-radius: 10px 10px 0 0; }
+.container-bg { position: relative; margin-top: -60px; background: #ffffff; border-radius: 10px 10px 0 0; z-index: 999; }
 
 @media all and (max-width: 575px) { .container-bg { margin-top: 20px; border-radius: none; } }
 
@@ -205,7 +205,7 @@ header.scrolled { background: #171a21 !important; padding: 10px 0; -webkit-trans
 
 .services .service-item:hover, .services .service-item:hover i, .services .service-item:hover p { background: #234DD4; border-radius: 8px; color: #ffffff; }
 
-.popular-things h3 { text-align: center; font-size: 25px; font-weight: 600; color: #000; line-height: 20px; padding: 50px 0 10px 0; }
+.popular-things h3 { text-align: center; font-size: 25px; font-weight: 600; color: #000; line-height: 31px; padding: 50px 0 10px 0; }
 
 .popular-things p { text-align: center; font-size: 14px; font-weight: 400; color: #A1A1A1; padding-bottom: 30px; }
 

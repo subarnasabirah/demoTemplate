@@ -1,7 +1,9 @@
 .container-bg {
+    position: relative;
     margin-top: -60px;
     background: $white;
     border-radius: 10px 10px 0 0;
+    z-index: 999;
     @include media("xs") {
         margin-top: 20px;
         border-radius: none;
